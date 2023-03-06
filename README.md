@@ -1,2 +1,0 @@
-# Quran-Site
-Quran-Site
