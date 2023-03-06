@@ -1,0 +1,56 @@
+@import url("../src/component/HomeComponent/homepage.css");
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blackColor--: #000000;
+  --mainColor--: #004143;
+  --secColor--: #008E90;
+  --btnColor--: #F49D1A;
+  --goldenColor--: #FFD700;
+  --bgColorGray--: #e3e1e1;
+  --whiteColor--: #FFFFFF;
+  --HeadColor--: #1C7498;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bgColorGray--);
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainColor--);
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+  user-select: none;
+}
+
+a:hover {
+  color: var(--secColor--);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transition {
+  transition: .5s all ease-in-out;
+}
+
+
+
+
+
