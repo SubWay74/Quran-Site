@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 export default function Button(props) {
 
     return(
-            <a href={props.link} target="_blank"  className="btn center" rel="noreferrer">
+            <Link to={props.to} className="btn center" rel="noreferrer">
             <span>{props.name}</span>
-            </a>
+            </Link>
     )
 }

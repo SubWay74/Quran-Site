@@ -1,0 +1,94 @@
+.log-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/public/img/logregest.webp);
+    background-size: cover;
+}
+
+.log-container .logform {
+    position: absolute;
+    width: 50%;
+    height: 80vh;
+    top: 50%;
+    right: 10%;
+    transform: translate(0%, -50%);
+    background-color: white;
+}
+
+.log-container .logform .login {
+    flex-direction: column;
+    padding: 2em 0;
+    width: 100%;
+}
+
+.log-container .logform .login img {
+    width: 7em;
+}
+
+.log-container .logform .login form {
+    flex-direction: column;
+    width: 100%;
+}
+
+.log-container .logform .login form .input-container {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.log-container .logform .login form .input-container input {
+    background-color: var(--bgColorGray--);
+    width: 17em;
+    height: 3em;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 1em;
+    border: 2px solid var(--mainColor--);
+    border-radius: 5px;
+}
+
+.log-container .logform .login form .input-container label {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 5%;
+    pointer-events: none;
+    transform: translate(0%, -50%);
+    font-weight: 400;
+}
+
+.log-container .logform .login form .input-container input:focus {
+    border-color: var(--secColor--);
+}
+
+.log-container .logform .login form .input-container input:focus + label,
+.log-container .logform .login form .input-container input:not(:invalid) + label
+{
+    top: -5%;
+    background-color: var(--mainColor--);
+    color: white;
+    padding: .2em .5em;
+    border-radius: 10px;
+}
+
+
+.login button {
+    padding: 1em 2em;
+    width: 7em;
+    height: 3em;
+    margin-bottom: 1em;
+}
+
+.log-container .logform .login p {
+    margin-top: 1em;
+}
+
+@media (max-width: 900px) {
+    .log-container .logform{
+        width: 90%;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+}
+

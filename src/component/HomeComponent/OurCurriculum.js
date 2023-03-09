@@ -17,11 +17,15 @@ export default function OurCurriculum() {
         items: 3.3
         },
         tablet: {
-        breakpoint: { max: 1024, min: 464 },
+        breakpoint: { max: 1024, min: 780 },
         items: 2.3
         },
+        minTablet: {
+        breakpoint: { max: 780, min: 480 },
+        items: 1.7
+        },
         mobile: {
-        breakpoint: { max: 464, min: 0 },
+        breakpoint: { max: 480, min: 0 },
         items: 1.3
         }
     };

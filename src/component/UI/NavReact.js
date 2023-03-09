@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 
 export default function NavBar() {
@@ -28,13 +29,13 @@ export default function NavBar() {
             </div>
             <div className="left-nav center hidden" ref={navRef}>
                 <ul className="center">
-                    <li id="home">Home</li>
-                    <li id="curriculum">Curriculum</li>
-                    <li id="about-us">About Us</li>
-                    <li id="blogs">Blogs</li>
-                    <li id="our-featured">Our Featured</li>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/curriculum">Curriculum</Link></li>
+                    <li><Link to="/home">About Us</Link></li>
+                    <li><Link to="/home">Blogs</Link></li>
+                    <li><Link to="/home">Our Featured</Link></li>
                 </ul>
-                <Button name="Login" link="###" />
+                <Button name="Login" to="/"/>
                 <Button name="Book A Free Trail" link="###" />
             </div>
         </div>
