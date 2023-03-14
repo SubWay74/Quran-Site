@@ -1,4 +1,12 @@
 @import url("../src/component/HomeComponent/homepage.css");
+@import url("../src/component/LogRegest/logregest.css");
+@import url("../src/component/CurriculumComponents/currpage.css");
+@import url("../src/component/AboutUsComponent/aboutuspage.css");
+@import url("../src/component/BlogComponents/blogpage.css");
+@import url("../src/component/OurFeaturedComponents/ourFeaturedpage.css");
+@import url("../src/component/PolicyComponents/policy.css");
+@import url("../src/component/LearnComponents/learningpages.css");
+
 
 *, *::before, *::after {
   margin: 0;
@@ -19,7 +27,6 @@
 
 body {
   margin: 0;
-  background-color: var(--bgColorGray--);
   font-family: 'Poppins', sans-serif;
   position: relative;
 }
@@ -30,14 +37,10 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--mainColor--);
   font-weight: bold;
+  color: var(--mainColor--);
   transition: all .2s ease-in-out;
   user-select: none;
-}
-
-a:hover {
-  color: var(--secColor--);
 }
 
 .center {
@@ -49,6 +52,180 @@ a:hover {
 .transition {
   transition: .5s all ease-in-out;
 }
+
+.btn {
+  position: relative;
+  height: 2em;
+  padding: 1em 1em;
+  margin: 0px 1em;
+  background-color: #F49D1A;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn span {
+  z-index: 2;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn:active {
+  background-color: rgb(223, 145, 0);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 5em;
+  height: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  top: 0;
+  left:-100%;;
+  animation: btn-animation 3s infinite;
+}
+
+.main-nav {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
+  user-select: none;
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  padding-left: 1em;
+}
+
+.logo-img {
+  width: 150px;
+  height: 100px;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  background-color: var(--mainColor--);
+  width: 80%;
+  text-align: center;
+  padding: .5em;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  color: white;
+  user-select: none;
+  box-shadow: 0px 2px 5px 0 black;
+}
+
+.main-nav .left-nav {
+  display: flex;
+  font-weight: bold;
+  color: var(--mainColor--);
+  text-align: center;
+  justify-content: space-between;
+}
+
+.main-nav .left-nav ul li a  {
+  margin: 0 .5em;
+  cursor: pointer;
+  color: var(--mainColor--);
+}
+
+.main-nav .left-nav ul li:hover a {
+  color: var(--btnColor--);
+}
+
+@keyframes btn-animation {
+  0% {left: -100%}
+  100% {left: 120%}
+}
+
+.main-sec .disc a {
+  margin-top: 1em;
+}
+
+@media (max-width: 1130px) {
+  .main-nav {
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
+
+@media (max-width: 1026px) {
+    .main-nav .logo {
+      align-self: flex-start;
+  }
+
+  .main-nav {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bgColorGray--);
+  }
+
+  .main-nav .nav-btn {
+      cursor: pointer;
+      display: inline;
+      width: 40px;
+      position: absolute;
+      right: 1em;
+      top: 1.5em;
+  }
+
+  .main-nav .hidden {
+      display: none;
+  }
+
+  .main-nav .left-nav {
+      flex-direction: column;
+      padding: 1em;
+  }
+
+  .main-nav .left-nav ul {
+      flex-direction: column;
+  }
+
+  .main-nav .left-nav ul li {
+      position: relative;
+      width: 100%;
+      height: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .main-nav .left-nav ul li::before {
+      content: "";
+      position: absolute;
+      width: 70%;
+      height: 2px;
+      background-color: var(--bgColorGray--);
+      bottom: 0%;
+  }
+
+  .btn-container {
+      flex-direction: column;
+  }
+  .main-nav .left-nav .btn {
+      position: relative;
+      margin-top: 1em;
+  }
+}
+
 
 
 

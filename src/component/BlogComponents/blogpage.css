@@ -1,0 +1,91 @@
+.blog-bg .mini-sec {
+    position: relative;
+    background-color: black;
+    background-image: url(/public/img/aboutUs-bg.webp);
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+
+.blog-bg .mini-sec .disc {
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    padding: 2em;
+    Background-color: rgba(0, 0, 0, 0.681);
+    Backdrop-filter:blur(5.8px);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.blog-bg .mini-sec .disc .btns a {
+    padding: 1em 2em;
+}
+
+.blog-sec .blog-card {
+    width: 25%;
+    background-color: var(--bgColorGray--);
+    margin: 1em 2em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+}
+
+.blog-sec .blog-card h1 {
+    text-align: center;
+    padding: 2em 0;
+    margin: 0;
+    color: white;
+    background-image: url(/public/img/cards-bg.webp);
+    background-size: cover;
+    border-radius: 1em 1em 0 0 ;
+}
+
+.blog-sec .blog-card p {
+    padding: 1em;
+    text-overflow: ellipsis;
+    height: 9em;
+    overflow: hidden;
+}
+
+.blog-sec .blog-card button {
+    height: 4em;
+}
+
+.blog-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100vh;
+}
+
+.blog-popup .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.blog-popup .container img {
+    width: 100%;
+    height: 30vh;
+}
+
+.blog-popup .container h1 {
+    padding: 1em 2em;
+}
+
+.blog-popup .container p {
+    padding: 0 3em;
+}
+

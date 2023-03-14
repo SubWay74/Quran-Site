@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../UI/Button";
 
 
 export default function OurFlagCourses() {
@@ -10,27 +11,27 @@ export default function OurFlagCourses() {
             <section className="center">
                 <div className="card center transition">
                     <img src="/img/our-flagship.webp" alt="" />
-                    <h1>Tajveed Ul Quran</h1>
+                    <h1>Tajweed Ul Quran</h1>
                     <p>8 Years to NO age bar</p>
-                    <button>Read More</button>
+                    <Button name="Read More" to="/blog/tajweed"/>
                 </div>
                 <div className="card center transition">
                     <img src="/img/our-flagship.webp" alt="" />
                     <h1>Memorization of Quran</h1>
                     <p>8 Years to NO age bar</p>
-                    <button>Read More</button>
+                    <Button name="Read More" to="/blog/memorization"/>
                 </div>
                 <div className="card center transition">
                     <img src="/img/our-flagship.webp" alt="" />
                     <h1>Learn Arabic</h1>
                     <p>8 Years to NO age bar</p>
-                    <button>Read More</button>
+                    <Button name="Read More" to="/blog/learn-arabic"/>
                 </div>
                 <div className="card center transition">
                     <img src="/img/our-flagship.webp" alt="" />
                     <h1>Learn Urdu</h1>
                     <p>8 Years to NO age bar</p>
-                    <button>Read More</button>
+                    <Button name="Read More" to="/blog/learn-urdu"/>
                 </div>
             </section>
         </div>

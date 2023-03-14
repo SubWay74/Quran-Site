@@ -1,22 +1,20 @@
-.main-sec {
+.home .main-sec {
     position: relative;
     background-color: black;
-    background-image: url(/public/img/landing-page.webp);
+    background-image: url(/public/img/curriculum-bg.webp);
     background-size: cover;
     height: 100vh;
     width: 100%;
-
 }
 
-.main-sec .disc {
+.home .main-sec .disc {
     position: absolute;
     font-size: 20px;
     left: 10%;
     top: 30%;
-    width: 50%;
+    width: 60%;
     padding: 2em;
     border-radius: 5px;
-    /* background-color: rgba(0, 0, 0, 0.798); */
     Background-color: rgba(0, 0, 0, 0.681);
     Backdrop-filter:blur(5.8px);
     color: var(--whiteColor--);
@@ -29,20 +27,13 @@
     margin: 1em;
 }
 
-header {
-    width: 100%;
+.flag-courses section .card {
+    height: 14em;
 }
 
-header h1 {
-    background-color: var(--mainColor--);
-    width: 80%;
-    text-align: center;
-    padding: .5em;
-    margin-bottom: 1em;
-    border-radius: 2em;
-    color: white;
-    user-select: none;
-    box-shadow: 0px 2px 5px 0 black;
+.flag-courses section .card a {
+    width: 90%;
+    margin-top: 1em;
 }
 
 section {
@@ -145,6 +136,10 @@ section .card button:active {
 
 .about-us .left-side div {
     margin: 1em;
+}
+
+.certified {
+    background-color: var(--bgColorGray--);
 }
 
 .certified section .card {
@@ -278,7 +273,7 @@ section .card button:active {
 
 .learn-tajweed-sec {
     flex-direction: column;
-    background-color: var(--whiteColor--);
+    background-color: var(--bgColorGray--);
 }
 
 .learn-tajweed-sec .content-btns button {
@@ -292,7 +287,7 @@ section .card button:active {
 
 .learn-tajweed-sec .content-btns .active {
     background-color: var(--mainColor--);
-}   
+}
 
 .learn-tajweed-sec .content-btns button:active {
     background-color: var(--mainColor--);
@@ -312,7 +307,7 @@ section .card button:active {
 
 .learn-tajweed-sec .curriculum-sec .container-card {
     margin-top: 1em;
-    background-color: var(--bgColorGray--);
+    background-color: var(--whiteColor--);
     width: 16em;
 
 }
@@ -364,11 +359,76 @@ section .card button:active {
     padding-left: 2.5em;
 }
 
+.form-bg {
+    background-color: var(--bgColorGray--);
+    /* padding: 0em 5em; */
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.home-form-sec .form-bg img {
+    width: 55%;
+    height: 50em;
+    margin: 0;
+}
+
+.react-tel-input {
+    border: 2px solid var(--mainColor--);
+}
+
+.react-tel-input .form-control {
+    width: 100%;
+}
+
+.form-bg .form-container .name .input-container {
+    padding-left: 1em;
+}
+
+.form-bg .form-container .name .input-container input {
+    width: 90%;
+}
+
+.home-form-sec .form-bg .form-container {
+    width: 60%;
+    padding: 0 3em;
+}
+
+.home-form-sec .form-bg .form-container .form-disc {
+    margin-bottom: 2em;
+}
+
+.form-bg .form-container .select-container label {
+    margin-right: .5em;
+}
+
+.form-bg .form-container select {
+    background-color: var(--mainColor--);
+    border: none;
+    color: white;
+    padding: .5em;
+    width: 50%;
+}
+
+.form-bg .form-container .upload-file {
+    margin-top: 1em;
+    width: 80%;
+}
+
+.form-bg .form-container .upload-file input {
+    /* background-color: var(--mainColor--); */
+    color: white;
+    padding: .5em;
+    width: 100%;
+}
+
 .footer {
     flex-wrap: wrap;
     width: 100%;
     padding: 2em .5em;
     background-color: black;
+    background-image: url(/public/img/footer-bg.webp);
+    background-size: cover;
     color: white;
 }
 
@@ -413,16 +473,22 @@ section .card button:active {
     align-self: flex-start;
 }
 
+@media (max-width: 1210px) {
+    .home .main-sec .disc {
+        top: 20%;
+        width: 60%;
+    }
+}
+
 @media (max-width: 1026px) {
 
-    .main-sec {
+    .home .main-sec {
         height: 90vh;
     }
 
-    .main-sec .disc {
-        width: 80%;
-        top: 20%;
+    .home .main-sec .disc {
         font-size: 16px;
+        width: 80%;
     }
 
     .about-us {
@@ -468,7 +534,7 @@ section .card button:active {
     }
 
     .wrapper .accurdion .show {
-        height: 8em;
+        height: 10em;
     }
 
     .table-sec table th {

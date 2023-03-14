@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare, faXmarkSquare, faCediSign } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -18,20 +19,20 @@ export default function Footer() {
             <div className="logo-social link-pages center">
                 <h3>Useful Links</h3>
                 <ul className="page-links">
-                    <li><a>Home</a></li>
-                    <li><a>Curriculum</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Career</a></li>
+                <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/curriculum">Curriculum</Link></li>
+                    <li><Link to="/about-us">About Us</Link></li>
+                    <li><Link to="/blog">Blogs</Link></li>
+                    <li><Link to="/joinasteacher">Career</Link></li>
                 </ul>
             </div>
             <div className="logo-social link-pages center">
                 <h3>Plicies</h3>
                 <ul className="page-links">
-                    <li><a>Privacy Policy</a></li>
-                    <li><a>Refund Policy</a></li>
-                    <li><a>Terms and Conditions</a></li>
-                    <li><a>FAQs</a></li>
+                    <li><Link to="/privacy">Privacy Policy</Link></li>
+                    <li><Link to="/refund">Refund Policy</Link></li>
+                    <li><Link to="/terms">Terms and Conditions</Link></li>
+                    <li><Link to="/faq">FAQs</Link></li>
                 </ul>
             </div>
             <div className="logo-social link-pages center">

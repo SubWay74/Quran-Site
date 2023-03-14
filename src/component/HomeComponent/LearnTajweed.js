@@ -3,8 +3,7 @@ import Button from "../UI/Button";
 
 export default function LearnTajweed() {
     
-    const [cardSelection, SetCardSelection] = useState(oneToOne)
-
+    const [cardSelection, setCardSelection] = useState(oneToOne);
 
     return(
         <section className="learn-tajweed-sec center">
@@ -14,8 +13,8 @@ export default function LearnTajweed() {
                 </h1>
             </header>
             <div className="content-btns">
-                <button className={cardSelection === oneToOne ? "first-btn active" : "first-btn"} onClick={() => SetCardSelection(prevValue => prevValue = oneToOne)}>One To One</button>
-                <button className={cardSelection === groupSession ? "sec-btn active" : "sec-btn"} onClick={() => SetCardSelection(prevValue => prevValue = groupSession)}>Group Session</button>
+                <button className={cardSelection === oneToOne ? "first-btn active" : "first-btn"} onClick={() => setCardSelection(prevValue => prevValue = oneToOne)}>One To One</button>
+                <button className={cardSelection === groupSession ? "sec-btn active" : "sec-btn"} onClick={() => setCardSelection(prevValue => prevValue = groupSession)}>Group Session</button>
             </div>
             <div className="curriculum-sec center">
                 {cardSelection.map((item, i) => (
@@ -30,7 +29,7 @@ export default function LearnTajweed() {
                         </div>
                         <div className="card-learn center">
                             <h1>00.00 US$</h1>
-                            <Button name="Book Now" link={item.link} />
+                            <Button name="Book Now" to="/bookfreetrail" />
                         </div>
                     </div>
                 ))}

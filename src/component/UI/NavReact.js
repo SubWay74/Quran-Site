@@ -22,7 +22,7 @@ export default function NavBar() {
     return(
         <div className="main-nav">
             <div className="logo">
-                <img src="img/AW-wide-logo.webp" alt="logo" className="logo-img" />
+                <img src="/img/AW-wide-logo.webp" alt="logo" className="logo-img" />
             </div>
             <div className="nav-btn" id="nav-btn" onClick={toggleNav}>
                 <img src={navBtn ? "/img/square-xmark-solid.svg" : "/img/square-check-solid.svg"} alt="toggle-nav-btn" />
@@ -31,12 +31,12 @@ export default function NavBar() {
                 <ul className="center">
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="/curriculum">Curriculum</Link></li>
-                    <li><Link to="/home">About Us</Link></li>
-                    <li><Link to="/home">Blogs</Link></li>
-                    <li><Link to="/home">Our Featured</Link></li>
+                    <li><Link to="/about-us">About Us</Link></li>
+                    <li><Link to="/blog">Blogs</Link></li>
+                    <li><Link to="/our-featured">Our Featured</Link></li>
                 </ul>
                 <Button name="Login" to="/"/>
-                <Button name="Book A Free Trail" link="###" />
+                <Button name="Book A Free Trail" to="/bookfreetrail" />
             </div>
         </div>
     )

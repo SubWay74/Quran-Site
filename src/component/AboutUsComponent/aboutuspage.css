@@ -1,0 +1,98 @@
+.aboutus .main-sec {
+    position: relative;
+    background-color: black;
+    background-image: url(/public/img/aboutUs-bg.webp);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.aboutus .main-sec .disc {
+    position: absolute;
+    font-size: 20px;
+    left: 10%;
+    top: 30%;
+    width: 50%;
+    padding: 2em;
+    Background-color: rgba(0, 0, 0, 0.681);
+    Backdrop-filter:blur(5.8px);
+    border-radius: 5px;
+    color: white;
+}
+
+.thrd-sec {
+    padding: 0;
+}
+
+.thrd-sec .container {
+    flex-wrap: wrap;
+}
+
+
+.thrd-sec .container .right-half,
+.thrd-sec .container .left-half {
+    width: 50%;
+    /* margin: 0 2em; */
+}
+
+.thrd-sec .container .right-half {
+    padding: 4em 2em;
+    color: white;
+    text-align: center;
+    background-color: var(--mainColor--);
+}
+
+.thrd-sec .container .right-half h1 {
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+
+.thrd-sec .container .left-half img {
+    width: 20em;
+    padding: 2em 0 ;
+    margin-left: 5em;
+}
+
+.thrd-sec .container .right-half a {
+    margin-top: 2em;
+}
+
+.our-values {
+    background-color: var(--bgColorGray--);
+}
+
+.our-values .card-container,
+.whyus .card-container {
+    flex-wrap: wrap;
+}
+
+.our-values .card-container .card {
+    height: 17em;
+    min-width: 25em;
+}
+
+.whyus .card-container .card {
+    height: 17em;
+}
+
+
+@media (max-width: 1026px) {
+    .our-values .card-container .card {
+        height: 20em;
+        min-width: 20em;
+    }
+
+    .thrd-sec .container {
+        flex-wrap: wrap;
+    }
+
+    .thrd-sec .container:nth-child(even) .left-half {
+        display: none;
+    }
+
+    .thrd-sec .container .right-half,
+    .thrd-sec .container .left-half {
+    width: 100%;
+}
+}
+

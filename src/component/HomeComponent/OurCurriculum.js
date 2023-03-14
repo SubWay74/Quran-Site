@@ -47,7 +47,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -59,7 +59,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -71,7 +71,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -83,7 +83,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -95,7 +95,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -107,7 +107,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -119,7 +119,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -131,7 +131,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -143,7 +143,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -155,7 +155,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -167,7 +167,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
                 <div className="container-card center">
@@ -179,7 +179,7 @@ export default function OurCurriculum() {
                     </div>
                     <div className="card-learn center">
                         <h1>00.00 US$</h1>
-                        <Button name="Book A Free Trail" link="###" />
+                        <Button name="Book A Free Trail" to="/bookfreetrail" />
                     </div>
                 </div>
             </Carousel>;

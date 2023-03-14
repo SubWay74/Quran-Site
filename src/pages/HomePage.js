@@ -8,6 +8,7 @@ import Accurdion from "../component/HomeComponent/Accurdion";
 import OurCurriculum from "../component/HomeComponent/OurCurriculum";
 import LearnTajweed from "../component/HomeComponent/LearnTajweed";
 import Table from "../component/HomeComponent/Table";
+import Form from "../component/HomeComponent/Form";
 import Footer from "../component/UI/Footer";
 
 
@@ -24,6 +25,7 @@ export default function HomePage() {
             <OurCurriculum/>
             <LearnTajweed/>
             <Table/>
+            <Form/>
             <Footer/>
         </>
     )

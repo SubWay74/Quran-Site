@@ -4,7 +4,7 @@ import Button from "../UI/Button";
 export default function MainSec() {
     return(
         <>
-        <div className="curriculum">
+        <div className="aboutus">
             <div className="main-sec">
                 <div className="disc">
                     <h1>
