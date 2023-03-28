@@ -12,11 +12,26 @@ import RefundPage from './pages/RefundPage';
 import TermsPage from './pages/TermsPage';
 import FAQPage from './pages/FAQPage';
 import LearnUrduPage from './pages/LearnUrduPage';
-import LearnArabicPage from './pages/LearnArabicPage'
-import TajweedPage from './pages/TajweedPage'
-import MemorizationPage from './pages/MemorizationPage'
-import BookFreeTrailPage from './pages/BookFreeTrailPage'
-import JoinAsTeacherPage from './pages/JoinAsTeacherPage'
+import LearnArabicPage from './pages/LearnArabicPage';
+import TajweedPage from './pages/TajweedPage';
+import LearnAdhan from './component/LearnComponents/LearnAdhan';
+import MemorizationPage from './pages/MemorizationPage';
+import BookFreeTrailPage from './pages/BookFreeTrailPage';
+import JoinAsTeacherPage from './pages/JoinAsTeacherPage';
+import Profile from './component/ProfileComponents/Profile';
+import Confirm from './pages/Confirm';
+// POSTS
+import BenefitsOfMemorizingQuran from './component/BlogComponents/Posts/BenefitsOfMemorizingQuran';
+import BenefitsOfSurahArRahman from './component/BlogComponents/Posts/BenefitsOfSurahArRahman';
+import BestTips from './component/BlogComponents/Posts/BestTips';
+import HowToMemorize from './component/BlogComponents/Posts/HowToMemorize';
+import OARvsTAR from './component/BlogComponents/Posts/OARvsTAR';
+import TipsTajweed from './component/BlogComponents/Posts/TipsTajweed';
+import WhyAdhan from './component/BlogComponents/Posts/WhyAdhan';
+import WhyAr from './component/BlogComponents/Posts/WhyAr';
+import WhyARArabicWave from './component/BlogComponents/Posts/WhyARArabicWave';
+import WhyMemorizeQuran from './component/BlogComponents/Posts/WhyAr';
+
 
 
 export default function App() {
@@ -29,9 +44,9 @@ export default function App() {
 
   return (
     <Routes>
-      <Route exact path='/' element={<Login/>}/>
+      <Route exact path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
-      <Route path='/home' element={<HomePage/>}/>
+      <Route path='/' element={<HomePage/>}/>
       <Route path='/curriculum' element={<Curriculum/>}/>
       <Route path='/about-us' element={<AboutUsPage/>}/>
       <Route path='/blog' element={<BlogPage/>}/>
@@ -43,9 +58,22 @@ export default function App() {
       <Route path='/blog/learn-urdu' element={<LearnUrduPage/>}/>
       <Route path='/blog/learn-arabic' element={<LearnArabicPage/>}/>
       <Route path='/blog/tajweed' element={<TajweedPage/>}/>
+      <Route path='/blog/adhan' element={<LearnAdhan/>}/>
       <Route path='/blog/memorization' element={<MemorizationPage/>}/>
       <Route path='/bookfreetrail' element={<BookFreeTrailPage/>}/>
       <Route path='/joinasteacher' element={<JoinAsTeacherPage/>}/>
+      <Route path='/profile' element={<Profile/>}/>
+      <Route path='/BenefitsOfMemorizingQuran' element={<BenefitsOfMemorizingQuran/>}/>
+      <Route exact path='/BenefitsOfSurahArRahman' element={<BenefitsOfSurahArRahman/>}/>
+      <Route exact path='/BestTips' element={<BestTips/>}/>
+      <Route exact path='/HowToMemorize' element={<HowToMemorize/>}/>
+      <Route exact path='/OARvsTAR' element={<OARvsTAR/>}/>
+      <Route exact path='/TipsTajweed' element={<TipsTajweed/>}/>
+      <Route exact path='/WhyAdhan' element={<WhyAdhan/>}/>
+      <Route exact path='/WhyAr' element={<WhyAr/>}/>
+      <Route exact path='/WhyARArabicWave' element={<WhyARArabicWave/>}/>
+      <Route exact path='/WhyMemorizeQuran' element={<WhyMemorizeQuran/>}/>
+      <Route path="/confirmation/:id" element={<Confirm/>} />
     </Routes>
   );
 }

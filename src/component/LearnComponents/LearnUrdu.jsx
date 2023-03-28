@@ -5,23 +5,24 @@ export default function LearnUrduSec() {
     return(
         <>
         <section className="learn-sec">
-            <div className="center learn-first-sec">
-                <p>
-                    Your privacy is important to us. It is iCodejr's policy to respect your privacy regarding any information we may collect from you across our website, https://arabicwave.com, and other sites we own and operate.
-                    We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.
-                    We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.
-                    We don't share any personally identifying information publicly or with third-parties, except when required to by law.
-                    Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.
-                    You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.
-                    Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.
-                </p>
-                <img src="/img/about-us-img.webp" alt="" />
+            <div className="learn-first-sec">
+                <div className="content">
+                    <h1>Importance and benefits of learning Urdu language</h1>
+                    <p>1. Urdu is one of the cultural languages which has a rich literature and has familiarity with Hindi, Punjabi, Persian, Turkish, and Sanskrit. Learning Urdu can give better exposure to an individual for knowing other mentioned languages as well. Many basic words of Urdu and Hindi are similar.</p>
+                    <p>2. Urdu is one of the unique languages where most Indians and neighboring country’s muslims prefer to learn Islamic knowledge in Urdu language. There are huge islamic literatures in Urdu language aa people can explore the islamic knowledge through Urdu language.</p>
+                    <p>3. Urdu is among the 20th most spoken languages in the world with around 160 million speakers in over 26 countries, which means if you’re traveling to any such country for studies or career opportunities, language won’t be a barrier.</p>
+                    <p>4. Urdu is written from right to left enhancing your graphic structure which tends to sharpen your analytical skills as well.</p>
+                    <p>5. The Urdu language is considered one of the most polite languages because of the words and phrases use. Have you ever noticed if a small kid says – “Tashreef Rakhay” (Translation – Please sit), How pleasant one feels to hear it? </p>
+                    <p>6. Most of the gulf countries -Like Dubai, Kuwait, and Saudi Arabia have better job</p>
+                    <h1>Shahidi Qaida: </h1>
+                    <p>Arabic wave has launched its own Tajweedi Qaida, Shahidi Qaida which we have made by extracting very minute details of Qaida from the Qurra.</p>
+                    <h1>Separate Tutors for Separate Courses:</h1>
+                    <p>For every course offered by Arabic Wave, we provide a separate tutor for separate courses who are experts in the field. These expert tutors are certified trainers. </p>
+                    <h1>Female Tutor for Females:</h1>
+                    <p>Arabic Wave offers you to select a female tutor for the female candidate.</p>
+                </div>
             </div>
-            <p className="learn-sec-sec">
-                Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.
-                You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.
-                Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us
-            </p>
+
             <OurFlagCourses/>
         </section>
         </>

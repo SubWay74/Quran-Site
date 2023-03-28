@@ -28,8 +28,8 @@ export default function LearnTajweed() {
                             <p>{item.fourthDisc}</p>
                         </div>
                         <div className="card-learn center">
-                            <h1>00.00 US$</h1>
-                            <Button name="Book Now" to="/bookfreetrail" />
+                            <h1>{item.charge}</h1>
+                            <a target="_blank" href="https://wa.link/xo8cx6"><button className="btn center">Book Now</button></a>
                         </div>
                     </div>
                 ))}
@@ -40,71 +40,57 @@ export default function LearnTajweed() {
 
 const oneToOne = [
     {
-        title: "frist Card",
-        firstDisc: "first discrioption",
-        secondDisc: "second discrioption",
-        thirdDisc: "third discrioption",
-        fourthDisc: "fourth discrioption",
-        link: "####"
+        title: "Basic",
+        firstDisc: "5 classes/ week (30 Mins)",
+        secondDisc: "3 classes/week (30 Mins)",
+        thirdDisc: "Weekends classes (40 Mins)",
+        link: "####",
+        charge: "22$"
     },
     {
-        title: "second Card",
-        firstDisc: "first discrioption",
-        secondDisc: "second discrioption",
-        thirdDisc: "third discrioption",
-        fourthDisc: "fourth discrioption",
-        link: "####"
+        title: "Intermediate",
+        firstDisc: "5 classes/ week (30 Mins)",
+        secondDisc: "3 classes/week (30 Mins)",
+        thirdDisc: "Weekends classes (40 Mins)",
+        link: "####",
+        charge: "34$"
     },
     {
-        title: "third Card",
-        firstDisc: "first discrioption",
-        secondDisc: "second discrioption",
-        thirdDisc: "third discrioption",
-        fourthDisc: "fourth discrioption",
-        link: "####"
+        title: "Advance",
+        firstDisc: "5 classes/ week (30 Mins)",
+        secondDisc: "3 classes/week (30 Mins)",
+        thirdDisc: "Weekends classes (40 Mins)",
+        link: "####",
+        charge: "47$"
     },
     {
-        title: "fourth Card",
-        firstDisc: "first discrioption",
-        secondDisc: "second discrioption",
-        thirdDisc: "third discrioption",
-        fourthDisc: "fourth discrioption",
-        link: "####"
+        title: "Expert",
+        firstDisc: "5 classes/ week (30 Mins)",
+        secondDisc: "3 classes/week (30 Mins)",
+        thirdDisc: "Weekends classes (40 Mins)",
+        link: "####",
+        charge: "56$"
     },
 ]
 const groupSession = [
     {
-        title: "frist 00Card",
-        firstDisc: "first 00discrioption",
-        secondDisc: "second 00discrioption",
-        thirdDisc: "third 00discrioption",
+        title: "Group 5 Students",
+        firstDisc: "5 classes/week (60 mins)",
+        secondDisc: "3 classes/week (60 mins)",
+        thirdDisc: "Weekends classes (70 mins)",
         fourthDisc: "fourth 00discrioption",
-        link: "####"
+        link: "####",
+        charge: "Free"
     },
     {
-        title: "second 00Card",
-        firstDisc: "first 00discrioption",
-        secondDisc: "second 00discrioption",
-        thirdDisc: "third 00discrioption",
+        title: "Group 10 Students",
+        firstDisc: "5 classes/week (60 mins)",
+        secondDisc: "3 classes/week (60 mins)",
+        thirdDisc: "Weekends classes (70 mins)",
         fourthDisc: "fourth 00discrioption",
-        link: "####"
-    },
-    {
-        title: "third 00Card",
-        firstDisc: "first 00discrioption",
-        secondDisc: "second 00discrioption",
-        thirdDisc: "third 00discrioption",
-        fourthDisc: "fourth 00discrioption",
-        link: "####"
-    },
-    {
-        title: "fourth 00Card",
-        firstDisc: "first 00discrioption",
-        secondDisc: "second 00discrioption",
-        thirdDisc: "third 00discrioption",
-        fourthDisc: "fourth 00discrioption",
-        link: "####"
-    },
+        link: "####",
+        charge: "Free"
+    }
 ]
 
 

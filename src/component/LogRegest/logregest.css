@@ -6,6 +6,7 @@
     background-size: cover;
 }
 
+
 .log-page .form-bg {
     position: absolute;
     width: 50%;
@@ -16,27 +17,43 @@
     background-color: white;
 }
 
-.log-page .form-bg .form-container {
+.register {
+    height: 130vh;
+}
+
+.register .form-bg {
+    height: 100vh;
+}
+
+.home-form-sec .teacher-form {
+    height: 60vh;
+}
+
+.home-form-sec .teacher-form img {
+    height: 30em;
+}
+
+.form-bg .form-container {
     flex-direction: column;
     padding: 2em 0;
     width: 100%;
 }
 
 .log-page .form-bg .form-container img {
-    width: 7em;
-    margin-bottom: 2em;
+    width: 12em;
+    margin-bottom: 1em;
 }
 
-.form-bg .form-container form {
+.form-container form {
     flex-direction: column;
     width: 100%;
 }
 
-.form-bg .form-container form .input-container {
+.form-container form .input-container {
     position: relative;
 }
 
-.form-bg .form-container form .input-container input {
+.form-container form .input-container input {
     background-color: white;
     width: 17em;
     height: 2.5em;
@@ -46,7 +63,7 @@
     border-radius: 5px;
 }
 
-.form-bg .form-container form .input-container label {
+.form-container form .input-container label {
     position: absolute;
     z-index: 1;
     top: -5%;
@@ -60,11 +77,11 @@
     font-weight: 400;
 }
 
-.form-bg .form-container form .input-container input:focus {
+.form-container form .input-container input:focus {
     border-color: var(--secColor--);
 }
 
-.form-bg .form-container form .error-msg {
+.form-container form .error-msg {
     margin-bottom: 1.5em;
     padding-left: 1em;
     color: rgb(218, 0, 0);
@@ -105,10 +122,6 @@
     .home-form-sec .form-bg .form-container  {
         width: 100%;
         padding: 1em;
-    }
-
-    .form-bg .form-bg .btn-form-container {
-        
     }
 }
 

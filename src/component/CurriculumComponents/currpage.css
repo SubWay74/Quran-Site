@@ -1,28 +1,15 @@
 .curriculum .main-sec {
-    position: relative;
-    background-color: black;
     background-image: url(/public/img/landing-page.webp);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
+    background-attachment: fixed;
 }
 
-.curriculum .main-sec .disc {
-    position: absolute;
-    font-size: 20px;
-    left: 10%;
-    top: 30%;
-    width: 50%;
-    padding: 2em;
-    Background-color: rgba(0, 0, 0, 0.681);
-    Backdrop-filter:blur(5.8px);
-    border-radius: 5px;
-    color: white;
+.crr-sec-sec {
+    background-color: white;
 }
 
 .sec-sec {
     flex-wrap: wrap;
-    background-color: white;
+    margin: 0;
 }
 
 .sec-sec .container {
@@ -37,6 +24,10 @@
 
 .sec-sec .container h1 {
     color: var(--mainColor--);
+}
+
+.tri-sec {
+    background-color: var(--bgColorGray--);
 }
 
 .tri-sec .tri-el img {
@@ -71,6 +62,10 @@
 
 .content-btns .sec-btn {
     border-radius: 0px 10px 10px 0px;
+}
+
+.our-curr {
+    background-color: white;
 }
 
 .curri-sec {
@@ -112,13 +107,17 @@
     flex-direction: column;
 }
 
+.course-sec .course-container .left-half {
+    position: relative;
+}
+
 .course-sec .course-container .right-half a,
 .course-sec .course-container .left-half a {
     margin-top: 1em;
 }
 
 .course-sec .course-container .right-half header h1 img {
-    width: 50px;
+    width: 100px;
     margin-left: 1em;
 }
 
@@ -128,14 +127,28 @@
     border-radius: 1em;
 }
 
+
+
 .course-sec .course-container .left-half img {
     width: 100%;
-    height: 12em;
-    border-radius: 3em;
+    height: 15em;
+    border-radius: 1em;
+    z-index: 3;
 }
 
+.course-sec .course-container .left-half a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+}
+
+
+
+
+
 .why-us-sec {
-    background-color: var(--bgColorGray--);
     padding: 0;
 }
 
@@ -183,17 +196,16 @@
 .why-us-sec .content-half .container img {
     width: 5em;
     margin-right: 1em;
+    color: white;
 }
 
 
 @media (max-width: 1026px) {
     .curriculum .main-sec {
-        height: 90vh;
+        height: 70vh;
     }
-
     .curriculum .main-sec .disc {
-        width: 80%;
-        text-align: center;
+        margin-top: 3em;
     }
 
     .content-btns button {

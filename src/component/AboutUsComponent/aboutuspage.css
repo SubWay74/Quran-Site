@@ -1,23 +1,6 @@
 .aboutus .main-sec {
-    position: relative;
-    background-color: black;
     background-image: url(/public/img/aboutUs-bg.webp);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-}
-
-.aboutus .main-sec .disc {
-    position: absolute;
-    font-size: 20px;
-    left: 10%;
-    top: 30%;
-    width: 50%;
-    padding: 2em;
-    Background-color: rgba(0, 0, 0, 0.681);
-    Backdrop-filter:blur(5.8px);
-    border-radius: 5px;
-    color: white;
+    background-attachment: fixed;
 }
 
 .thrd-sec {
@@ -75,8 +58,20 @@
     height: 17em;
 }
 
+.whyus .card-container .card img {
+    border-radius: 1em;
+}
+
 
 @media (max-width: 1026px) {
+    .aboutus .main-sec {
+        height: 70vh;
+    }
+
+    .aboutus .main-sec .disc {
+        margin-top: 3em;
+    }
+
     .our-values .card-container .card {
         height: 20em;
         min-width: 20em;

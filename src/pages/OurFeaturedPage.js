@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../component/UI/NavReact";
+import AyahOfTheDay from "../component/UI/AyahOfTheDay";
 import MiniMainSec from "../component/UI/MiniMainSec";
 import OurFeaturedSec from "../component/OurFeaturedComponents/OurFeaturedSec";
 import WhyAWSec from "../component/OurFeaturedComponents/WhyAWSec";
@@ -9,6 +10,7 @@ export default function OurFeaturedPage() {
     return(
         <>
         <NavBar/>
+        <AyahOfTheDay/>
         <MiniMainSec
             headClass="ourfeatured-bg"
             header="Our Featured"

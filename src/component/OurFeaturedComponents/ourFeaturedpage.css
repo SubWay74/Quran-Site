@@ -24,6 +24,10 @@
 
 /* The Second Section styles are from AboutUs thrd Section styling */
 
+.why-aw {
+    background-color: white;
+}
+
 .why-aw .header-disc {
     padding: 1em 2em;
     text-align: center;

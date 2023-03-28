@@ -4,6 +4,7 @@
     background-size: cover;
     height: 60vh;
     width: 100%;
+    background-color: white;
 }
 
 .policy-bg .mini-sec .disc {
@@ -19,6 +20,37 @@
     text-align: center;
 }
 
-.policy-sec p {
+.policy-sec {
+    padding: 0;
+}
+
+.policy-sec .content-container {
     padding: 2em 4em;
+    background-color: white;
+}
+
+.policy-sec .content-container h1 {
+    padding: 1em 0;
+}
+
+.policy-sec .content-container ul li{
+    position: relative;
+    padding: 1em 0;
+    transform: translateX(3%);
+}
+
+.policy-sec .content-container ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: translate(-0%, -50%);
+    border: 10px solid;
+    border-color: transparent transparent transparent black;
+}
+
+@media (max-width: 1010px) {
+    .policy-sec .content-container ul li::before {
+        left: -5%;
+    }
 }

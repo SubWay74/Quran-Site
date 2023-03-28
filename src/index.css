@@ -6,6 +6,7 @@
 @import url("../src/component/OurFeaturedComponents/ourFeaturedpage.css");
 @import url("../src/component/PolicyComponents/policy.css");
 @import url("../src/component/LearnComponents/learningpages.css");
+@import url("../src/component/ProfileComponents/profile.css");
 
 
 *, *::before, *::after {
@@ -20,7 +21,7 @@
   --secColor--: #008E90;
   --btnColor--: #F49D1A;
   --goldenColor--: #FFD700;
-  --bgColorGray--: #e3e1e1;
+  --bgColorGray--: #eeeeee;
   --whiteColor--: #FFFFFF;
   --HeadColor--: #1C7498;
 }
@@ -29,6 +30,8 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   position: relative;
+  background-image: url(/public/img/bg-img-low-op.jpg);
+  background-attachment: fixed;
 }
 
 ul {
@@ -148,16 +151,196 @@ header h1 {
   color: var(--btnColor--);
 }
 
+.main-sec {
+  position: relative;
+  background-color: black;
+  background-image: url(/public/img/curriculum-bg.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-sec .disc {
+  position: absolute;
+  font-size: 20px;
+  left: 10%;
+  top: 30%;
+  width: 60%;
+  padding: 2em;
+  border-radius: 5px;
+  Background-color: rgba(0, 0, 0, 0.681);
+  Backdrop-filter:blur(5.8px);
+  color: var(--whiteColor--);
+}
+
+.ayah-container {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 8vh;
+  padding: 0;
+  background-image: linear-gradient(90deg, var(--mainColor--) 70%, var(--secColor--) 100%);
+}
+
+.ayah-container .head,
+.ayah-container .ayah {
+  position: absolute;
+  top: 0%;
+  color: white;
+  transform: translate(5%,-5%);
+  height: inherit;
+  padding-top: .2em;
+}
+
+.ayah-container .head {
+  padding: .2em 1em;
+  right: 0;
+  top: 5%;
+  background-color: var(--secColor--);
+  height: 100%;
+  z-index: 2;
+}
+
+.ayah-container .ayah {
+  left: -200%;
+  white-space: nowrap;
+  animation: ayah-animation 55s ease-in-out infinite ;
+}
+
+@keyframes ayah-animation {
+  0% {left: -200%}
+  100% {left: 0%}
+}
+
 @keyframes btn-animation {
   0% {left: -100%}
   100% {left: 120%}
+}
+
+.hello-msg {
+  margin-bottom: -10px;
+}
+
+.username {
+    max-width: 4em;
+    overflow: hidden;
+    padding: 0 .3em;
 }
 
 .main-sec .disc a {
   margin-top: 1em;
 }
 
+.footer {
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2em .5em;
+  background-color: black;
+  background-image: url(/public/img/footer-bg.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.footer .logo-social {
+  flex-direction: column;
+  width: 12em;
+  height: 15em;
+  justify-content: flex-start;
+  margin: 1em 1em;
+}
+
+.footer .logo-social img {
+  width: 5em;
+}
+
+.footer .logo-social p {
+  text-align: center;
+}
+
+.footer .logo-social ul li{
+  padding: .5em 0em;
+  cursor: pointer;
+}
+
+.footer .logo-social ul li,
+.footer .logo-social ul li a{
+  color: white;
+  font-weight: 400;
+  margin: 0 .2em;
+}
+
+.footer .logo-social ul li:hover,
+.footer .logo-social ul li a:hover {
+  color: var(--goldenColor--);
+  transform: scale(1.1);
+}
+
+.footer .logo-social ul li img {
+  width: 2em;
+
+}
+
+
+.footer .logo-social h3 {
+  align-self: flex-start;
+  color: var(--goldenColor--);
+}
+
+.footer .logo-social .page-links {
+  align-self: flex-start;
+}
+
+.whats-btn {
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+  background-color: white;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  animation: whatsbtn-animation 3s infinite 2s ;
+  z-index: 5;
+}
+
+@keyframes whatsbtn-animation {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(-20deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-20deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.whats-btn img {
+  width: 4em;
+  
+}
+
+.whats-btn img:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 1210px) {
+  .main-sec .disc {
+      top: 20%;
+      width: 60%;
+  }
+}
+
 @media (max-width: 1130px) {
+  .main-sec {
+    height: 90vh;
+}
+
+.main-sec .disc {
+    font-size: 16px;
+    width: 80%;
+}
+
   .main-nav {
       font-size: 16px;
       display: flex;
@@ -167,6 +350,15 @@ header h1 {
 }
 
 @media (max-width: 1026px) {
+  .mini-sec .disc .btns {
+    flex-direction: column;
+  }
+
+  .mini-sec .disc .btns a {
+    margin: .3em 0;
+    font-size: 14px;
+  }
+
     .main-nav .logo {
       align-self: flex-start;
   }
@@ -217,12 +409,42 @@ header h1 {
       bottom: 0%;
   }
 
+  .nav-btn img {
+    width: 2em;
+  }
+
   .btn-container {
       flex-direction: column;
   }
   .main-nav .left-nav .btn {
       position: relative;
       margin-top: 1em;
+  }
+
+  .ayah-container .head {
+    font-size: 14px;
+  }
+
+  footer .link-pages {
+    margin-bottom: 3em;
+  }
+
+  footer .logo-social h3 {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  .footer .logo-social .page-links {
+    align-self: center;
+  }
+
+
+  .footer .logo-social ul li{
+    text-align: center;
+    width: 100%;
   }
 }
 

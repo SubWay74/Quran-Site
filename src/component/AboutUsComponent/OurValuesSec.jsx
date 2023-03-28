@@ -9,17 +9,17 @@ export default function OurValues() {
             </header>
             <div className="card-container center">
                 <div className="card center transition">
-                    <img src="/img/Accessibility.svg" alt="" />
+                    <img src="/img/Passion.svg" alt="" />
                     <h1>Passion</h1>
                     <p>At Arabic Wave, you will be learning Arabic courses by certified experts, providing high-quality education.</p>
                 </div>
                 <div className="card center transition">
-                    <img src="/img/Accessibility.svg" alt="" />
+                    <img src="/img/Efficiency.svg" alt="" />
                     <h1>Efficiency</h1>
                     <p>At Arabic Wave, you will be learning Arabic courses by certified experts, providing high-quality education.</p>
                 </div>
                 <div className="card center transition">
-                    <img src="/img/Accessibility.svg" alt="" />
+                    <img src="/img/Inclusion.svg" alt="" />
                     <h1>Inclusion</h1>
                     <p>Our all students everyone equally and make sure that no one is left behind. We want to ensure that information is presented in the most inclusive way possible while consistently understanding all students.</p>
                 </div>

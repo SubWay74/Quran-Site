@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 export default function Register() {
@@ -7,6 +7,8 @@ export default function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const [formSubmitted, setFormSubmitted] = useState(false);
+    const [formError, setFormError] = useState('');
 
     function removeError(e) {
         const removeEl = document.getElementById(e);
@@ -18,7 +20,7 @@ export default function Register() {
         errorname.style.opacity = 1;
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmitCheck = (event) => {
     event.preventDefault();
 
     if (firstName === "") {
@@ -44,9 +46,25 @@ export default function Register() {
         displayError('confirm-password');
         return;
     }
-
     // Perform form validation here
     console.log('Form submitted');
+    };
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await fetch('http://127.0.0.1:8000/auth/register/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ firstname : firstName, lastname :lastName, email: email,password :  password, confirmPassword : confirmPassword }),
+            });
+            const data = await response.json();
+            console.log(data); //consoling
+        } catch (error) {
+            console.error(error); //consoling
+        }
     };
 
     return (
@@ -54,7 +72,7 @@ export default function Register() {
         <div className="log-page register">
             <div className="form-bg ">
                     <div className="form-container center ">
-                    <img src="/img/AR-icon.webp" alt="" />
+                    <img src="/img/AW-wide-logo.webp" alt="" />
                     <form onSubmit={handleSubmit} className="center ">
                         <div>
                             <div className="input-container">
@@ -85,6 +103,7 @@ export default function Register() {
                                 <input
                                 type="email"
                                 name="email"
+                                required
                                 value={email}
                                 onChange={(event) => {setEmail((prevValue) => prevValue = event.target.value); removeError('email');}}
                                 />
@@ -118,7 +137,7 @@ export default function Register() {
                         </div>
                         <div className="btn-form-container center">
                             <button className="btn center" type="submit">Register</button>
-                            <Link to="/">
+                            <Link to="/login">
                                 <button className="btn center" type="submit">Login</button>
                             </Link>
                         </div>

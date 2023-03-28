@@ -14,7 +14,7 @@ export default function Certified() {
                     <p>At Arabic Wave, you will be learning Arabic courses by certified experts, providing high-quality education.</p>
                 </div>
                 <div className="card center transition">
-                    <img src="/img/calender-1.webp" alt="" />
+                    <img src="/img/calender.png" alt="" />
                     <h1>Flexible Calendar and Language</h1>
                     <p>We provide flexibility and language to our learners as our expert Quran tutors come from the most famous place in the world.</p>
                 </div>
@@ -24,7 +24,7 @@ export default function Certified() {
                     <p>Our online Quran classes include animations and videos to make the course more engaging and interactive for our students.</p>
                 </div>
                 <div className="card center transition">
-                    <img src="/img/activites-1.webp" alt="" />
+                    <img src="/img/activities.png" alt="" />
                     <h1 className="center">Activities</h1>
                     <p>Arabic Wave gives the students time-to-time activities for better learning and understanding</p>
                 </div>

@@ -8,7 +8,7 @@ export default function OurCurriculum() {
 
     return (
         <>
-        <section>
+        <section className="our-curr">
             <header className="center">
                     <h1>
                         Our Curriculum
@@ -39,10 +39,10 @@ export default function OurCurriculum() {
             </div>
             <div className="btn-container center">
                 <div className="content-btns">
-                        <button className="">Hifz-Ul-Qur'an</button>
+                    <button className="">Hifz-Ul-Qur'an</button>
                 </div>
                     <div className="content-btns">
-                        <button className="first-btn" onClick={() => setHafizCards(prevValue => prevValue = hifz[0].beginner)}>Beginner</button>
+                        <button className={hafizCards === hifz[0].beginner ? "first-btn active" : "first-btn"} onClick={() => setHafizCards(prevValue => prevValue = hifz[0].beginner)}>Beginner</button>
                         <button onClick={() => setHafizCards(prevValue => prevValue = hifz[1].intermediate)}>Intermediate</button>
                         <button className="sec-btn" onClick={() => setHafizCards(prevValue => prevValue = hifz[2].advanced)}>Advanced</button>
                     </div>

@@ -1,25 +1,3 @@
-.home .main-sec {
-    position: relative;
-    background-color: black;
-    background-image: url(/public/img/curriculum-bg.webp);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-}
-
-.home .main-sec .disc {
-    position: absolute;
-    font-size: 20px;
-    left: 10%;
-    top: 30%;
-    width: 60%;
-    padding: 2em;
-    border-radius: 5px;
-    Background-color: rgba(0, 0, 0, 0.681);
-    Backdrop-filter:blur(5.8px);
-    color: var(--whiteColor--);
-}
-
 .flag-courses {
     background-color: white;
     border: .5em solid var(--mainColor--);
@@ -62,7 +40,7 @@ section .card:hover {
 }
 
 section .card img {
-    width: 10em;
+    width: 13em;
     height: 8em;
     margin-top: -3em;
     margin-bottom: 1em;
@@ -138,10 +116,6 @@ section .card button:active {
     margin: 1em;
 }
 
-.certified {
-    background-color: var(--bgColorGray--);
-}
-
 .certified section .card {
     height: 20em;
     min-width: calc(80% / 3);
@@ -215,7 +189,7 @@ section .card button:active {
 .wrapper .accurdion .show {
     opacity: 1;
     padding: 1em;
-    height: 5em;
+    height: fit-content;
     visibility: visible;
     transition: cubic-bezier(0,1,0,1) .5s ease-in-out all;
 }
@@ -244,10 +218,22 @@ section .card button:active {
     color: var(--secColor--)
 }
 
+.curriculum-sec .container-card .card-disc .card-p {
+    max-height: 12em;
+    overflow-y: scroll;
+
+}
+
 .curriculum-sec .container-card .card-disc h1,
 .curriculum-sec .container-card .card-disc p{
-    padding: .5em 0;
+    padding: .5em 1em;
     user-select: none;
+
+}
+
+.curriculum-sec .container-card .card-disc p::first-letter {
+    color: var(--mainColor--);
+    font-weight: bold;
 }
 
 .curriculum-sec .container-card .card-disc hr {
@@ -375,10 +361,11 @@ section .card button:active {
 
 .react-tel-input {
     border: 2px solid var(--mainColor--);
+    width: fit-content !important;
 }
 
-.react-tel-input .form-control {
-    width: 100%;
+.home-form-sec {
+    background-color: white;
 }
 
 .form-bg .form-container .name .input-container {
@@ -422,75 +409,7 @@ section .card button:active {
     width: 100%;
 }
 
-.footer {
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 2em .5em;
-    background-color: black;
-    background-image: url(/public/img/footer-bg.webp);
-    background-size: cover;
-    color: white;
-}
-
-.footer .logo-social {
-    flex-direction: column;
-    width: 12em;
-    height: 15em;
-    justify-content: flex-start;
-    margin: 1em 1em;
-}
-
-.footer .logo-social img {
-    width: 5em;
-}
-
-.footer .logo-social p {
-    text-align: center;
-}
-
-.footer .logo-social ul li{
-    padding: .5em 0em;
-    cursor: pointer;
-}
-
-.footer .logo-social ul li,
-.footer .logo-social ul li a{
-    color: white;
-    font-weight: 400;
-}
-
-.footer .logo-social ul li:hover,
-.footer .logo-social ul li a:hover {
-    color: var(--goldenColor--);
-}
-
-.footer .logo-social h3 {
-    align-self: flex-start;
-    color: var(--goldenColor--);
-}
-
-.footer .logo-social .page-links {
-    align-self: flex-start;
-}
-
-@media (max-width: 1210px) {
-    .home .main-sec .disc {
-        top: 20%;
-        width: 60%;
-    }
-}
-
 @media (max-width: 1026px) {
-
-    .home .main-sec {
-        height: 90vh;
-    }
-
-    .home .main-sec .disc {
-        font-size: 16px;
-        width: 80%;
-    }
-
     .about-us {
         flex-direction: column;
         align-items: center;
@@ -548,10 +467,5 @@ section .card button:active {
     /* This Class Just for the numbers that are at the table without any chect images */
     .table-sec table tbody tr .num {
         padding-left: 1.5em;
-    }
-
-    .footer .link-pages {
-        align-items: flex-start;
-        justify-content: flex-start;
     }
 }

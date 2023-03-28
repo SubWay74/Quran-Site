@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare, faXmarkSquare, faCediSign } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -10,16 +8,15 @@ export default function Footer() {
                 <img src="/img/AR-icon.webp" alt="" />
                 <p>Best online Arabic learning Academy. Be the part of this path of wisdom happiness.</p>
                 <ul className="socail-links center">
-                    <li><a href="###">F</a></li>
-                    <li><a href="###">T</a></li>
-                    <li><a href="###">L</a></li>
-                    <li><a href="###">Y</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/Arabicwaveacademy"><img src="/img/facebook.png" alt="" /></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/company/arabic-wave-academy/"><img src="/img/linkedin.png" alt="" /></a></li>
+                    <li><a target="_blank" href="https://wa.link/xo8cx6"><img src="/img/whatsapp.png" alt="" /></a></li>
                 </ul>
             </div>
             <div className="logo-social link-pages center">
-                <h3>Useful Links</h3>
+                <h3 >Useful Links</h3>
                 <ul className="page-links">
-                <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/home">Home</Link></li>
                     <li><Link to="/curriculum">Curriculum</Link></li>
                     <li><Link to="/about-us">About Us</Link></li>
                     <li><Link to="/blog">Blogs</Link></li>
@@ -47,6 +44,7 @@ export default function Footer() {
             <div className="logo-social link-pages center">
                 <h3>Donate</h3>
                 <p>Let’s bestow wisdom on others. Just a tiny attempt to cheer up those in the world who are in need of assistance.</p>
+                <Link><button className="btn center">Donate</button></Link>
             </div>
         </footer>
     )

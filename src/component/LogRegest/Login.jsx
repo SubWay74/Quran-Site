@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
 
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
-    const handleUsernameChange = (event) => {
-        setUsername(prevValue => prevValue = event.target.value);
+    const handleEmailChange = (event) => {
+        setEmail(prevValue => prevValue = event.target.value);
     };
     
     const handlePasswordChange = (event) => {
@@ -16,51 +17,44 @@ export default function Login() {
     };
     
     const handleSubmit = async (event) => {
-        event.preventDefault();
-
-        if (username === "") {
-            const errorname = document.getElementById("first-name");
-            errorname.style.opacity = 1;
-            return;
-        }
-        if (password === "") {
-            alert("Please enter your password.");
-            return;
-        }
-        // make API call to authenticate user
-        // const response = await fetch('/api/login', {
-        // method: 'POST',
-        // headers: {
-        //     'Content-Type': 'application/json'
-        // },
-        // body: JSON.stringify({
-        //     username,
-        //     password
-        // })
-        // });
-
-        // handle response from server
-        // const data = await response.json();
-        // if (response.ok) {
-        //   // user is authenticated - do something here
-        // } else {
-        //   // authentication failed - display error message
-        // console.error(data.message);
-        // }
-    };
-
+            event.preventDefault();
+            try {
+                const response = await fetch('http://127.0.0.1:8000/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email: email, password : password }),
+                });
+                if (response.status === 200) {
+                    // If the login is successful, redirect to the website with the desired route.
+                    const message = await response.json();
+                    localStorage.setItem("auth", message.token);
+                    console.log(message);
+                    window.location.href = '/';
+                } else {
+                    // If the login is unsuccessful, display the error message.
+                    const message = await response.json();
+                    setErrorMessage(message);
+                    console.log(message);
+                }
+                } catch (error) {
+                    console.error(error);
+                    setErrorMessage('Something went wrong. Please try again later.');
+                }
+        };
 
     return(
         <>
         <div className="log-page">
             <div className="form-bg">
                 <div className="form-container center">
-                    <img src="/img/AR-icon.webp" alt="" />
+                    <img src="/img/AW-wide-logo.webp" alt="" />
                     <form onSubmit={handleSubmit} className="center">
                         <div>
                             <div className="input-container">
-                                <input type="text" value={username} onChange={handleUsernameChange} />
-                                <label className="transition">Username</label>
+                                <input type="email" value={email} onChange={handleEmailChange} />
+                                <label className="transition">Email</label>
                             </div>
                             <p className="error-msg"  id='first-name'>Please enter your username.</p>
                         </div>
@@ -71,23 +65,21 @@ export default function Login() {
                             </div>
                             <p className="error-msg">Please enter your password</p>
                         </div>
-
                         {/* JUST FOR TESTING, I will delete the <Link><Link/> later */}
-
-                        <div className="btn-form-container">
-                            <Link to="/home">
+                        <div className="btn-form-container center ">
                             <button className="btn center" type="submit">Login</button>
+                            <Link to="/">
                             </Link>
-
                             <Link to="/register">
                             <button className="btn center">Register</button>
+                            
                             </Link>
                         </div>
                             <p>Forget Password?</p>
                     </form>
             </div>
         </div>
-        </div>
+        </div>ذ-
         </>
     )
 
