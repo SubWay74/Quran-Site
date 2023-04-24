@@ -31,7 +31,7 @@
 }
 
 .tri-sec .tri-el img {
-    width: 25em;
+    width: 20em;
 }
 
 .tri-sec p {
@@ -103,7 +103,7 @@
 .course-sec .course-container .right-half,
 .course-sec .course-container .left-half {
     width: 45%;
-    margin: 0 1em;
+    margin: 0 .5em;
     flex-direction: column;
 }
 
@@ -131,9 +131,11 @@
 
 .course-sec .course-container .left-half img {
     width: 100%;
+    position: relative;
     height: 15em;
     border-radius: 1em;
     z-index: 3;
+    margin-left: 0;
 }
 
 .course-sec .course-container .left-half a {
@@ -141,7 +143,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 2em;
+    padding: 1em;
+    width: 80%;
+    z-index: 4;
 }
 
 
@@ -202,14 +206,14 @@
 
 @media (max-width: 1026px) {
     .curriculum .main-sec {
-        height: 70vh;
+        height: 90vh;
     }
     .curriculum .main-sec .disc {
         margin-top: 3em;
     }
 
     .content-btns button {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .course-sec .course-container {
@@ -230,7 +234,12 @@
     .course-sec .course-container .left-half {
         width: 100%;
         padding-top: 1em;
+        margin: 0;
         margin-bottom: 3em;
+    }
+
+    .course-sec .course-container .left-half a {
+        margin: 0;
     }
 
     .why-us-sec .content-half {

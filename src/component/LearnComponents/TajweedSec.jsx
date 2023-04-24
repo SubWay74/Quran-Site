@@ -20,7 +20,7 @@ export default function TajweedSec() {
                     <p>Listening to the Qur’an being recited correctly is enough to soften even the hardest of hearts. Muslims and non-Muslims alike find it a deeply moving experience, even if they do not understand what is being said. Every Muslim has to recite Qur’an in prayers, but many of us do not realise that reciting the Qur’an correctly while observing the rules of recitation is not an advanced science for expert reciters alone, rather it is an obligation upon each and every one of us whenever we recite the Qur’an.</p>
                     <p>Usman ibn Affan(may Allah be pleased with Him) narrated that the Messenger of Allah PBUH stated: “The best among you are those who learns the Qur’an and teaches it to others.”</p>
                     <div className="center">
-                        <img src="/img/about-us-img.webp" alt="" />
+                        <img src="/img/tajweedulquran.webp" alt="" />
                     </div>
                     <p>In addition to this, there are numerous rewards mentioned in the Qur'an and book of Sunan about learning and reciting the Qur’an. One of these rewards is, one good deed is obtained by reciting one letter of Qur’an and reward of every good deed is ten times to that of the original one(Sunan Al-Tirmidhi: 01)</p>
                     <p>Do keep in mind that these virtues and rewards can only be obtained when the Qur’an is recited with proper pronunciation and correct attributions(sahih makharij). The Qur’an must be recited in the same manner of Prophet PBUH and His Companions. If not done so, they can be entitled to sin rather than rewards.</p>

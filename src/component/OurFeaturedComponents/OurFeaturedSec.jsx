@@ -12,13 +12,13 @@ export default function OurFeaturedSec() {
                     If you wish to memorize the whole Quran (Hifz) or learn how to recite the Quran correctly, we can help you learn the Holy Quran from the comfort of your own home, at your speed, over the Internet with the help of a qualified teacher.</p>
                     <Button name="Book A Free Trail" to="/bookfreetrail"/>
                 </div>
-                <div className="left-half">
-                    <img src="/img/right-img.webp" alt="" />
+                <div className="left-half center">
+                    <img src="/img/Images-1 for Ladies.JPG" alt="" />
                 </div>
             </div>
             <div className="container center">
-                <div className="left-half">
-                    <img src="/img/left-img.webp" alt="" />
+                <div className="left-half center">
+                    <img src="/img/Ladies.jpg" alt="" />
                 </div>
                 <div className="right-half">
                     <h1>You Can Learn Hifz-ul-Quran &Qirat</h1>
@@ -37,8 +37,8 @@ export default function OurFeaturedSec() {
                     </ul>
                     <Button name="Book A Free Trail" to="/bookfreetrail"/>
                 </div>
-                <div className="left-half">
-                    <img src="/img/left-img.webp" alt="" />
+                <div className="left-half center">
+                    <img src="/img/image-18.jpg" alt="" />
                 </div>
             </div>
         </section>

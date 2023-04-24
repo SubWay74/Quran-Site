@@ -23,14 +23,11 @@ import Confirm from './pages/Confirm';
 // POSTS
 import BenefitsOfMemorizingQuran from './component/BlogComponents/Posts/BenefitsOfMemorizingQuran';
 import BenefitsOfSurahArRahman from './component/BlogComponents/Posts/BenefitsOfSurahArRahman';
-import BestTips from './component/BlogComponents/Posts/BestTips';
 import HowToMemorize from './component/BlogComponents/Posts/HowToMemorize';
-import OARvsTAR from './component/BlogComponents/Posts/OARvsTAR';
 import TipsTajweed from './component/BlogComponents/Posts/TipsTajweed';
-import WhyAdhan from './component/BlogComponents/Posts/WhyAdhan';
-import WhyAr from './component/BlogComponents/Posts/WhyAr';
-import WhyARArabicWave from './component/BlogComponents/Posts/WhyARArabicWave';
 import WhyMemorizeQuran from './component/BlogComponents/Posts/WhyAr';
+
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -43,6 +40,7 @@ export default function App() {
   }, [location.pathname]);
 
   return (
+    <>
     <Routes>
       <Route exact path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
@@ -65,16 +63,13 @@ export default function App() {
       <Route path='/profile' element={<Profile/>}/>
       <Route path='/BenefitsOfMemorizingQuran' element={<BenefitsOfMemorizingQuran/>}/>
       <Route exact path='/BenefitsOfSurahArRahman' element={<BenefitsOfSurahArRahman/>}/>
-      <Route exact path='/BestTips' element={<BestTips/>}/>
       <Route exact path='/HowToMemorize' element={<HowToMemorize/>}/>
-      <Route exact path='/OARvsTAR' element={<OARvsTAR/>}/>
       <Route exact path='/TipsTajweed' element={<TipsTajweed/>}/>
-      <Route exact path='/WhyAdhan' element={<WhyAdhan/>}/>
-      <Route exact path='/WhyAr' element={<WhyAr/>}/>
-      <Route exact path='/WhyARArabicWave' element={<WhyARArabicWave/>}/>
       <Route exact path='/WhyMemorizeQuran' element={<WhyMemorizeQuran/>}/>
       <Route path="/confirmation/:id" element={<Confirm/>} />
     </Routes>
+    </>
+    
   );
 }
 

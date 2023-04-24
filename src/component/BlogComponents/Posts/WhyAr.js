@@ -6,7 +6,7 @@ export default function WhyMemorizeQuran() {
     <>
         <section className='post-sec'>
         <BackToBlogs/>
-        <img src="/img/image-3.jpg" alt="" />
+        
         <div className="content">
             <h1>Why Is It Important For A Muslim To Learn Arabic?</h1>
             <div className="img center">
@@ -20,17 +20,10 @@ export default function WhyMemorizeQuran() {
                 <img src="/img/image-22.jpg" alt="" />
             </div>
             <p>People think that languages are the key to understanding the traditions and cultures of other countries because they are the way people express themselves. Even if you only know how to talk about the most basic things, being able to speak Arabic gives you the chance to talk to Arab people who live in different Muslim communities. Also, Omar Ibn Al-Khattab, a great companion, once said to the Islamic Ummah, "Learn Arabic because it is part of your religion."</p>
-            <h1>How to Learn the Prophet Muhammad's Sunnah</h1>
-            <p>Since the whole history of Islam is written in Arabic, the language has become very important over time. So, learning Arabic is very useful in a lot of ways. It lets you understand the words of the Prophet Muhammad and his Sunnah without having to translate them, and it also enables you to learn more about Islamic beliefs and ways of acting. Many books can help you learn Arabic, which is good news.</p>
-            <h1>Hadith about How to Learn Arabic:</h1>
-            <p>Every Muslim was told by the Prophet (saw) to learn Arabic. Umar ibn al-Khattab (ra), whose words were recorded in a hadith, is said to have said:</p>
-            <p>"تَعَلَّمُوا الْعَرَبِيَّةَ؛ فَإِنَّهَا تُثَبِّتُ الْعَقْلَ، وَتَزِيدُ فِي الْمُرُوءَةِ"</p>
-            <p>"Learn Arabic because it makes you smarter and nobler." [Al-Baihaqi, Shu'ab El-Eman]</p>
             <h1>The Arabic Literature Is Wonderful</h1>
             <p>Arabic literature is brilliant in a way that no other literature is, and it has a special place among the literature of all other languages. Arabic is a rich language that can say a lot with few words. Arabic poetry is also excellent and is still alive today.</p>
             <h1>Achieving Khushu in Salah</h1>
             <p>Prayers are the keys to success both in this world and the next. Lucky for you, there are some steps you can take to increase Khushu and make sure your heart is present when you pray, Salah. One of the best pieces of advice is to learn Arabic to understand the Surahs and Adhkar that are being recited during Salah. This makes it easier to focus on what is being said. Also, your prayers will feel completely different and won't be empty of thought anymore.</p>
-            <p>Riwaq Al Azhar Institute is a leader in teaching Arabic to people who don't speak it as their first language. Its goal is to help all Muslims learn Arabic online in the right way and explore its beauty. We have a wide variety of the best online Arabic classes for people of all ages and skill levels.</p>
             <h1>Getting To Know Islamic Sciences</h1>
             <div className="img center">
                 <img src="/img/image-23.png" alt="" />

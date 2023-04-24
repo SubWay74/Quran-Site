@@ -13,7 +13,7 @@ export default function PrivacyPage() {
         <AyahOfTheDay/>
         <MiniMainSec
             headClass="policy-bg"
-            header="Refund Policy"
+            header="Terms and Conditions"
             p="At Arabic, we are passionate about customer satisfaction"
         />
         <TermsSec/>

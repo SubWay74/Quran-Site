@@ -17,10 +17,10 @@ export default function Accurdion() {
             <div className="wrapper">
                 <header className="center">
                     <h1>
-                        Why Your Kids Should Learn Arabic
+                    What Parents Should Do When Their Students Are Taking Online Quran Classes
                     </h1>
                 </header>
-                {qAndAnswer.map((item, i) => (
+                {parentAnswers.map((item, i) => (
                     <div className="accurdion" key={i}>
                         <div className="center title transition" onClick={() => toggle(i)}>
                             <h1>{item.question}</h1>
@@ -33,10 +33,10 @@ export default function Accurdion() {
                 <br></br>
                 <header className="center">
                     <h1>
-                    What Parents Should Do When Their Students Are Taking Online Quran Classes
+                        Why Your Kids Should Learn Arabic
                     </h1>
                 </header>
-                {parentAnswers.map((item, i) => (
+                {qAndAnswer.map((item, i) => (
                     <div className="accurdion" key={i}>
                         <div className="center title transition" onClick={() => toggle(i)}>
                             <h1>{item.question}</h1>

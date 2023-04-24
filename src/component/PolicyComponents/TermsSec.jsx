@@ -60,7 +60,10 @@ export default function TermsSec() {
                 <h1>SEGMENT 18: CHANGES TO THE TERMS OF SERVICE</h1>
                 <p>On this page, you can always find the latest version of the Terms of Service.</p>
                 <p>We hold the right to update, change, or replace any part of these Terms of Service at any time. We will post updates and changes to our website when we do this. You should check our website often to see if anything has changed. If you keep using our website or the Service after any changes to these Terms of Service have been posted, you agree to the changes.</p>
-
+                <p>Contact details.
+                    Please reach out to us if you have any questions or concerns regarding Terms and Conditions.
+                    <a href="support@arabicwave.com">support@arabicwave.com</a>
+                </p>
             </div>
         </section>
         </>

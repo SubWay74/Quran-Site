@@ -1,24 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+
 function Confirm() {
   const navigate = useNavigate();
   let { id } = useParams();
   const activate = async () => {
     console.log(id)
-    let res = await fetch("http://127.0.0.1:8000/auth/activate/" + id, {
+    let res = await fetch("https://blue-cheerful-starfish.cyclic.app/auth/activate/" + id, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
     });
-    navigate('/')
+    // navigate('/') this will move the user to the homepage
   };
   useEffect(() => {
     activate();
   }, []);
   return (
-    <div>
-    </div>
+      <>
+        <div className="conformaion-container center">
+          <h1>You just activated your account!!✨✨</h1>
+          <p>Thank you for joining ArabicWave comunnity</p>
+          <Link to="/">
+            <p>Go to ArabicWave</p>
+          </Link>
+        </div>
+      </>
   );
 }
 

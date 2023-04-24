@@ -6,7 +6,7 @@ export default function BenefitsOfMemorizingQuran() {
     <>
         <section className='post-sec'>
         <BackToBlogs/>
-        <img src="/img/image-3.jpg" alt="" />
+        
         <div className="content">
             <h1>Benefits of Memorizing the Quran</h1>
             <p>Allah SWT provided the Quran to humanity as a source of guidance and kindness. Reciting and memorizing the Quran qualifies a person for blessings and status both in this life and in the Hereafter. Online memorizing the Quran has several rewards, advantages, and virtues for the afterlife and the hereafter. Memorizing the Quran brings respect, protects from hellfire, and enhances the health of the soul, body, and mind, honors parents, and much more. It is a way of honoring Allah. And Allah takes nothing from his people but bestows greater glory on the Hafiz.
@@ -35,8 +35,6 @@ export default function BenefitsOfMemorizingQuran() {
             </p>
             <h1>⦁	Increasing In Status</h1>
             <p>On the Day of Judgment, in particular, we all have the same goal: to move up in status. And on that day, the light of the Quran will pull the reciters of the Quran, who are called Qari, out of the darkness and bring them to the light, ultimately glorifying their ranks.</p>
-            <h1>⦁	Memorizing the Quran Ensures the Highest Ranks</h1>
-            <p>The Quran is the sole book that reveals the key to success in life and the afterlife. The beauty of this gain is that it will never fade or die. Memorizing the Quran elevates you to the shade of Allah's throne. Nobody escapes the heat and misery of the Day of Judgment. It will be the moment when people would go barefoot in the scorching sun and drown in their sweat. Some, however, shall be permitted the shadow of the Almighty's throne. Memorization of the Quran qualifies you for the crown on the Day of Judgment.</p>
             <h1>⦁	Memorizing the Quran Can Help You Live a More Purposeful Life</h1>
             <p>On the Day of Judgment, we shall be held accountable for every minute of our life. By memorizing the Quran, we are not only investing our time wisely but also reaping the benefits by increasing the intensity of our good acts.</p>
             <h1>Conclusion</h1>

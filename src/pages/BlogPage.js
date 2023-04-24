@@ -4,12 +4,14 @@ import AyahOfTheDay from "../component/UI/AyahOfTheDay";
 import Footer from "../component/UI/Footer";
 import MiniMainSec from "../component/UI/MiniMainSec";
 import BlogSec from "../component/BlogComponents/BlogSec";
+import WhatsAppBtn from "../component/UI/WhatsAppBtn";
 
 
 export default function BlogPage() {
     return(
         <>
         <NavBar/>
+        <WhatsAppBtn/>
         <AyahOfTheDay/>
         <MiniMainSec
             headClass="blog-bg"

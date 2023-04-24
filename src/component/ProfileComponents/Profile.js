@@ -22,7 +22,7 @@ export default function Profile() {
         event.preventDefault();
         const token = localStorage.getItem("auth")
         try {
-            const response = await fetch('http://127.0.0.1:8000/auth/changeprofile', {
+            const response = await fetch('https://blue-cheerful-starfish.cyclic.app/auth/changeprofile', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ export default function Profile() {
         event.preventDefault();
         const token = localStorage.getItem("auth")
         try {
-            const response = await fetch('http://127.0.0.1:8000/form/startcourse', {
+            const response = await fetch('https://blue-cheerful-starfish.cyclic.app/form/startcourse', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ export default function Profile() {
     const handleAcceptTeahers = async () => {
         const token = localStorage.getItem("auth")
         try {
-            const response = await fetch('http://127.0.0.1:8000/request/getrequests', {
+            const response = await fetch('https://blue-cheerful-starfish.cyclic.app/request/getrequests', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -114,7 +114,7 @@ export default function Profile() {
     const ActionRequestAccept = async (id, type) => {
         const token = localStorage.getItem("auth")
         try {
-            const response = await fetch('http://127.0.0.1:8000/request/acceptteacher', {
+            const response = await fetch('https://blue-cheerful-starfish.cyclic.app/request/acceptteacher', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -143,7 +143,7 @@ export default function Profile() {
     const ActionRequestReject = async (id, type) => {
         const token = localStorage.getItem("auth")
         try {
-            const response = await fetch('http://127.0.0.1:8000/request/rejectrequest', {
+            const response = await fetch('https://blue-cheerful-starfish.cyclic.app/request/rejectrequest', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

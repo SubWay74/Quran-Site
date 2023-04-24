@@ -33,6 +33,7 @@ section .card {
     border: 3px solid var(--mainColor--);
     justify-content: flex-start;
     box-shadow: 2px 2px 5px 0px black;
+    width: 100vw;
 }
 
 section .card:hover {
@@ -79,6 +80,7 @@ section .card button:active {
     justify-content: center;
     background-color: white;
     padding: 5em 0em;
+    width: 100vw;
 }
 
 .about-us .right-side {
@@ -155,6 +157,7 @@ section .card button:active {
 .wrapper .title {
     /* margin: 1em; */
     padding: 1em;
+    font-size: 14px;
     background-color: var(--bgColorGray--);
     justify-content: space-between;
     cursor: pointer;
@@ -178,7 +181,7 @@ section .card button:active {
     background-color: var(--mainColor--);
     color: white;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 14px;
     height: 0;
     opacity: 0;
     visibility: hidden;
@@ -197,7 +200,7 @@ section .card button:active {
 .curriculum-sec .container-card {
     background-color: white;
     width: 17em;
-    height: 25em;
+    height: 27em;
     margin-left: 2em;
     border-radius: 10px;
     flex-direction: column;
@@ -210,18 +213,17 @@ section .card button:active {
     flex-direction: column;
 }
 
-.curriculum-sec .container-card .card-disc a {
-    color: var(--mainColor--);
+.curriculum-sec .container-card a {
+    color: var(--btnColor--);
+    cursor: pointer;
 }
 
-.curriculum-sec .container-card .card-disc a:hover {
-    color: var(--secColor--)
+.curriculum-sec .container-card a:hover {
+    color: var(--mainColor--)
 }
 
 .curriculum-sec .container-card .card-disc .card-p {
     max-height: 12em;
-    overflow-y: scroll;
-
 }
 
 .curriculum-sec .container-card .card-disc h1,
@@ -361,7 +363,11 @@ section .card button:active {
 
 .react-tel-input {
     border: 2px solid var(--mainColor--);
-    width: fit-content !important;
+    width: 80% !important;
+}
+
+.react-tel-input .form-control  {
+    width: 100% !important;
 }
 
 .home-form-sec {
@@ -410,9 +416,13 @@ section .card button:active {
 }
 
 @media (max-width: 1026px) {
+    .flag-courses {
+        margin: 1em 0;
+    }
     .about-us {
         flex-direction: column;
         align-items: center;
+        max-width: 100vw;
     }
 
     .about-us .right-side {
@@ -456,6 +466,10 @@ section .card button:active {
         height: 10em;
     }
 
+    .table-sec table {
+        font-size: 1em;
+    }
+
     .table-sec table th {
         padding: .5em .3em;
     }
@@ -467,5 +481,9 @@ section .card button:active {
     /* This Class Just for the numbers that are at the table without any chect images */
     .table-sec table tbody tr .num {
         padding-left: 1.5em;
+    }
+
+    .form-container form .input-container input {
+        width: 100%;
     }
 }

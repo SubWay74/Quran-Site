@@ -15,7 +15,6 @@
 .thrd-sec .container .right-half,
 .thrd-sec .container .left-half {
     width: 50%;
-    /* margin: 0 2em; */
 }
 
 .thrd-sec .container .right-half {
@@ -31,9 +30,9 @@
 }
 
 .thrd-sec .container .left-half img {
+    border-radius: 3em;
     width: 20em;
     padding: 2em 0 ;
-    margin-left: 5em;
 }
 
 .thrd-sec .container .right-half a {
@@ -65,7 +64,7 @@
 
 @media (max-width: 1026px) {
     .aboutus .main-sec {
-        height: 70vh;
+        height: 90vh;
     }
 
     .aboutus .main-sec .disc {

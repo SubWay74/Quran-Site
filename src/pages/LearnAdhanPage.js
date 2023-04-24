@@ -4,6 +4,7 @@ import AyahOfTheDay from "../component/UI/AyahOfTheDay";
 import MiniMainSec from "../component/UI/MiniMainSec";
 import LearnArabicSec from "../component/LearnComponents/LearnArabicSec"
 import Footer from "../component/UI/Footer";
+import WhatsAppBtn from "../component/UI/WhatsAppBtn";
 
 
 export default function LearnAdhanPage() {
@@ -11,6 +12,7 @@ export default function LearnAdhanPage() {
         <>
         <NavBar/>
         <AyahOfTheDay/>
+        <WhatsAppBtn/>
         <MiniMainSec
                         headClass="learn-bg"
                         header="Learn Adhan"

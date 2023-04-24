@@ -20,6 +20,9 @@ export default function MemorizationSec() {
                     <p> 3 – He takes precedence in leadership if he able to bear that</p>
                     <p> It was narrated from ‘Aamir ibn Waathilah that Naafi’ ibn ‘Abd al-Haarith met ‘Umar in ‘Usfaan, and ‘Umar had appointed him as governor of Makkah. ‘Umar said, “Who have you appointed in charge of the people of the valley?” He said, “Ibn Abza.” ‘Umar asked, “Who is Ibn Abza?” He said, “One of our freed slaves.” Umar said, “Have you appointed over them a freed slave?!” He said, “He is well-versed in the Book of Allaah and he has knowledge of the laws of inheritance.” ‘Umar said: “Your Prophet (peace and blessings of Allaah be upon him) said: ‘Indeed, by this Book, Allaah would exalt some people and degrade others.’”</p>
                     <p>(Narrated by Muslim, 817)</p>
+                    <div className="center">
+                        <img src="/img/memrize-page.webp" alt="" />
+                    </div>
                     <p>With regard to the Hereafter:</p>
                     <p> 4 – The status of the one who memorizes Qur’aan will be commensurate with the last aayah he memorized. </p>
                     <p>It was narrated from ‘Abd-Allaah ibn ‘Amr that the Prophet (peace and blessings of Allaah be upon him) said: “It will be said to the companion of the Qur’aan (i.e., the one who memorized and studied it): ‘Read, advance in status and recite as you used to do in the world, for your status will be commensurate with the last aayah that you recite.’”</p>

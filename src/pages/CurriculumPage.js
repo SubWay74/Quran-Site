@@ -8,6 +8,7 @@ import CoursesSection from "../component/CurriculumComponents/CoursesSec";
 import OurCurriculum from "../component/CurriculumComponents/OurCurriculum";
 import WhyUsSec from "../component/CurriculumComponents/WhyUsSec";
 import Footer from "../component/UI/Footer";
+import WhatsAppBtn from "../component/UI/WhatsAppBtn";
 
 
 export default function Curriculum() {
@@ -15,11 +16,12 @@ export default function Curriculum() {
         <>
         <NavBar/>
         <AyahOfTheDay/>
+        <WhatsAppBtn/>
         <MainSec/>
         <SecSec/>
         <TriangleSec/>
         <CoursesSection/>
-        <OurCurriculum/>
+        {/* <OurCurriculum/> */}
         <WhyUsSec/>
         <Footer/>
         </>

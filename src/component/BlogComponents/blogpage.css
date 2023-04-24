@@ -3,7 +3,7 @@
     background-color: black;
     background-image: url(/public/img/aboutUs-bg.webp);
     background-size: cover;
-    height: 60vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -35,15 +35,17 @@
     background-color: var(--bgColorGray--);
     margin: 1em 2em;
     padding-bottom: 1em;
-    border-radius: 1em 1em 0 0 ;
+    border-radius: 1em ;
     position: relative;
+
 }
 
 .blog-sec .blog-card img {
     position: relative;
     width: 100%;
-    height: 8em;
+    height: 9em;
     z-index: 1;
+    border-radius: 5px 5px 0 0;
 }
 
 
@@ -55,7 +57,7 @@
     transform: translate(-50%,0%);
     text-align: center;
     z-index: 3;
-    padding: 1.2em 0;
+    padding: 1em .3em;
     margin: 0;
     color: white;
     /* border-radius: .5em .5em 0 0 ; */
@@ -69,7 +71,7 @@
 }
 
 .blog-sec .blog-card button {
-    height: 4em;
+    height: 3em;
 }
 
 .blog-popup {
@@ -165,3 +167,4 @@
     width: 50%;
     height: 50%;
 }
+

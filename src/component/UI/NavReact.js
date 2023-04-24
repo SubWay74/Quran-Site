@@ -32,7 +32,7 @@ useEffect(() => {
     return(
         <div className="main-nav">
             <div className="logo">
-                <img src="/img/AW-wide-logo.webp" alt="logo" className="logo-img" />
+                <Link to="/"><img src="/img/AW-wide-logo.webp" alt="logo" className="logo-img" /></Link>
             </div>
             <div className="nav-btn" id="nav-btn" onClick={toggleNav}>
                 <img src={navBtn ? "/img/x-solid.svg" : "/img/bars-solid.svg"} alt="toggle-nav-btn" />
@@ -43,7 +43,7 @@ useEffect(() => {
                     <li><Link to="/curriculum">Curriculum</Link></li>
                     <li><Link to="/about-us">About Us</Link></li>
                     <li><Link to="/blog">Blogs</Link></li>
-                    <li><Link to="/our-featured">Our Featured</Link></li>
+                    <li><Link to="/our-featured">Features</Link></li>
                 </ul>
                 {isUser ? 
                     <Link to="/profile">

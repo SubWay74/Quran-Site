@@ -13,8 +13,6 @@ import Form from "../component/HomeComponent/Form";
 import Footer from "../component/UI/Footer";
 import WhatsAppBtn from "../component/UI/WhatsAppBtn";
 
-
-
 export default function HomePage() {
     return (
         <>

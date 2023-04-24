@@ -4,62 +4,52 @@ import axios from "axios";
 
 export default function Form() {
         const [select1, setSelect1] = useState('');
-        const [email, setEmail] = useState(null);
         // eslint-disable-next-line no-unused-vars
         const [resume, setResume] = useState(null);
+        const [errorMsg, setErrorMsg] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         // Handle form submission here
-        
-        const token = localStorage.getItem("auth");
-        console.log(resume)
-        try {
-            const formdata = new FormData();
-                    formdata.append("type", select1);
-                    formdata.append("file", resume);
-                    formdata.append("email", email);
-                const response = await axios.post("http://127.0.0.1:8000/request/teacherrequest", formdata, {
+        if(!select1) {
+            setErrorMsg("Choose your course")
+        } else if (!resume) {
+            setErrorMsg("Enter your resume drive link")
+        } else {
+            const token = localStorage.getItem("auth");
+            try {
+                const response = await fetch('https://blue-cheerful-starfish.cyclic.app/request/teacherrequest/', {
+                    method: 'POST',
                     headers: {
-                    "Content-Type": "multipart/form-data",
-                    Authorization:`Token ${token}`,
-                },
-            });
-            console.log(response.status)
-            if (response.status === 200) {
-                
-                // If the login is successful, redirect to the website with the desired route.
-                const message = await response.json();
-                localStorage.setItem("auth", message.token);
-                // window.location.href = '/';
-            } else {
-                // If the login is unsuccessful, display the error message.
-                const message = await response.json();
-                console.log(message);
-            }
-            } catch (error) {
-                console.error(error);
-            }
-    };
-
-
-    const handleFileChange = (e) => {
-        setResume(e.target.files[0]);
-    }
-
-    useEffect(() => {
-        const token = localStorage.getItem("auth");
-        if (token) {
-            const userEamil = decodeToken(token).email;
-            setEmail(userEamil)
+                        'Content-Type': 'application/json',
+                        Authorization: `Token ${token}`
+                    },
+                    body: JSON.stringify({ type: select1, resume: resume }),
+                    });
+                console.log(response.status)
+                if (response.status === 200) {
+                    
+                    // If the login is successful, redirect to the website with the desired route.
+                    const message = await response.json();
+                    console.log(message)
+                    window.location.href = '/';
+                } else {
+                    // If the login is unsuccessful, display the error message.
+                    const message = await response.json();
+                    setErrorMsg(message)
+                }
+                } catch (error) {
+                    console.error(error);
+                }
         }
-    },[])
+
+    };
 
     return (
         <>
         <section className='home-form-sec'>
             <div className="form-bg center teacher-form">
-                <img className='right-form-img' src="/img/teacher-icon.png" alt="" />
+                <img className='right-form-img' src="/img/Online-tutor.JPG" alt="" />
                 <div className="form-container">
                     <div className='form-disc'>
                         <h1>Join As A Teacher</h1>
@@ -80,15 +70,17 @@ export default function Form() {
                                     <option value="learn-arabic">Learn Arabic</option>
                                 </select>
                             </div>
-                            <p className="error-msg"  id='first-name'>Please enter your username.</p>
                         </div>
                         <div className='center'>
-                            <div className='upload-file'>
-                                <label className="transition">Upload Resume</label>
-                                <input type="file" name='file' onChange={handleFileChange} />
+                            <div className='input-container'>
+                                <label className="transition">Resume Google Drive's link</label>
+                                <input type="text" name='file' onChange={(e) => setResume(prevValue => prevValue = e.target.value)} />
                             </div>
-                            <p className="error-msg"  id='first-name'>Please enter your username.</p>
                         </div>
+                        {errorMsg && 
+                            <div className="error-msg">
+                                <p>{errorMsg}</p>
+                            </div> }
                         <button className="btn center" type="submit">Submit</button>
                     </form>
                 </div>

@@ -6,7 +6,7 @@ export default function HowToMemorize() {
     <>
         <section className='post-sec'>
         <BackToBlogs/>
-        <img src="/img/image-3.png" alt="" />
+        
         <div className="content">
             <h1>How to Memorize Quran Online? Tips To Follow</h1>
             <div className="img center">
@@ -38,12 +38,7 @@ export default function HowToMemorize() {
             <h1>Understand the Verses You're Memorizing</h1>
             <p>One of the best ways to learn the Qur'an is to understand what the verses mean and how they connect. The person trying to learn the Quran should read the Tafsir (explanation) of the verses they want to learn. It will be easier for them to remember the Quran if they think about what it means as they read it. Knowing what the verses mean is very important if you want to learn the Quran by heart and get more out of reciting it.</p>
             <h1>Recite to Others What You've Memorized</h1>
-            <div className="img center">
-                <img src="/img/image-10.jpg" alt="" />
-            </div>
             <p>One of the best ways to learn the Quran is to tell other people what you have learned. It would be best to read the verses out loud to your family, a friend, or your teacher to see how well you remember them. Even when looking at the Mushaf, it is very common to make mistakes when learning a Surah by heart. But if you read the Qur'an to other people, they will always point out errors so you can fix them.</p>
-            <h1>Grammarly Premium Report</h1>
-            <h1>Plagiarism Report</h1>
         </div>
         </section>
     </>

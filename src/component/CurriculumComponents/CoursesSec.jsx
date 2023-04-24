@@ -5,27 +5,7 @@ export default function CoursesSection() {
     return (
         <>
             <section className='course-sec'>
-                <div className='course-container center'>
-                    <div className='right-half center'>
-                        <header className='center'>
-                            <h1 className='center'>
-                                Learn Arabic
-                                <img src="/img/learn-arabic.png" alt="" />  
-                            </h1>
-
-                        </header>
-                        <div>
-                            <p>Arabic is the language of the Qur'an (or Koran, the sacred book of Islam) and the religious language of all Muslims. Literary Arabic
-                            <Button name="Learn More" to="/blog/learn-arabic"/>
-                            </p>
-                            
-                        </div>
-                    </div> 
-                    <div className='left-half'>
-                        <img src="/img/course-img.webp" alt="" />
-                        <Button name="Book A Freee Trail" to="/bookfreetrail"/>
-                    </div>
-                </div>
+                {/* tajweed  */}
                 <div className='course-container center'>
                     <div className='left-half'>
                         <img src="/img/course-img.webp" alt="" />
@@ -34,8 +14,8 @@ export default function CoursesSection() {
                     <div className='right-half center'>
                         <header className='center'>
                             <h1 className='center'>
-                                Tajweel Ul-Quran
-                                <img src="/img/learn-tajweed.png" alt="" />  
+                                Tajweed Ul-Quran
+                                <img src="/img/Quran-PNG.png" alt="" />  
                             </h1>
                         </header>
                         <div>
@@ -46,11 +26,12 @@ export default function CoursesSection() {
                         </div>
                     </div> 
                 </div>
+                {/* Memorization */}
                 <div className='course-container center'>
                     <div className='right-half center'>
                         <header className='center'>
                             <h1 className='center'>
-                                Memorizatin Ul-Quran
+                            Memorization of Quran
                                 <img src="/img/Quran-PNG.png" alt="" />  
                             </h1>
                         </header>
@@ -66,11 +47,29 @@ export default function CoursesSection() {
                         <Button name="Book A Freee Trail" to="/bookfreetrail"/>
                     </div>
                 </div>
+                {/* arabic  */}
                 <div className='course-container center'>
-                    <div className='left-half'>
+                <div className='left-half'>
                         <img src="/img/course-img.webp" alt="" />
                         <Button name="Book A Freee Trail" to="/bookfreetrail"/>
                     </div>
+                    <div className='right-half center'>
+                        <header className='center'>
+                            <h1 className='center'>
+                                Learn Arabic
+                                <img src="/img/learn-arabic.png" alt="" />  
+                            </h1>
+                        </header>
+                        <div>
+                            <p>Arabic is the language of the Qur'an (or Koran, the sacred book of Islam) and the religious language of all Muslims. Literary Arabic
+                            <Button name="Learn More" to="/blog/learn-arabic"/>
+                            </p>
+                        </div>
+                    </div> 
+                </div> 
+                {/* Urdu  */}
+                <div className='course-container center'>
+
                     <div className='right-half center'>
                         <header className='center'>
                             <h1 className='center'>
@@ -85,8 +84,14 @@ export default function CoursesSection() {
                             
                         </div>
                     </div> 
+                    <div className='left-half'>
+                        <img src="/img/course-img.webp" alt="" />
+                        <Button name="Book A Freee Trail" to="/bookfreetrail"/>
+                    </div>
+                    
                 </div>
-                <div className='course-container center'>
+                {/* adhan  */}
+                {/* <div className='course-container center'>
                     <div className='right-half center'>
                         <header className='center'>
                             <h1 className='center'>
@@ -105,7 +110,7 @@ export default function CoursesSection() {
                         <img src="/img/course-img.webp" alt="" />
                         <Button name="Book A Freee Trail" to="/bookfreetrail"/>
                     </div>
-                </div>
+                </div> */}
             </section>
         </>
     )

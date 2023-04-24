@@ -6,7 +6,7 @@ export default function TipsTajweed() {
     <>
         <section className='post-sec'>
         <BackToBlogs/>
-        <img src="/img/image-3.jpg" alt="" />
+        
         <div className="content">
             <h1>Tips To Learn Tajweed Quran Easily And Effectively</h1>
             <div className="img center">
@@ -30,8 +30,6 @@ export default function TipsTajweed() {
             <p>If you want to learn Tajweed to the level of ITQAN, you need to learn both the theory and the practice of it. Tajweed should not just be thought of as a matter of accents or dialects. It covers many essential things about the holy Quran, like the timing of syllables, the clarity of expressions, and how each letter changes how a word is said.</p>
             <p>Theoretical Education of Tajweed is about clarifying Tajweed's rules without using them to recite the Quran with Tajweed or practising them.</p>
             <p>Practical Tajweed Knowledge is about the pronunciation rules of Tajweed and how to use them to read and recite the Quran in Arabic correctly.</p>
-            <h1>Learn What Certain Quran Verses Mean</h1>
-            <p>You can't learn something well if you don't understand it well. Applying the rules of Tajweed will help you learn how to read the Quran correctly in Arabic, but you should also learn about the verses you are reading and what they mean. When you understand what you are reading, you can memorise it and say it from the bottom of your heart. You can look at a tafsir book, a Mushaf with a brief Tafseer, or talk to a Quran tutor who can tell you what verses mean.</p>
             <h1>Sign Up For a Quran Tajweed Class</h1>
             <div className="img center">
                 <img src="/img/image-13.jpg" alt="" />

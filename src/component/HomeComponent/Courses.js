@@ -10,7 +10,7 @@ export default function OurFlagCourses() {
             </header>
             <section className="center">
                 <div className="card center transition">
-                    <img src="/img/learn-tajweed.png" alt="" />
+                    <img src="/img/Quran-PNG.png" alt="" />
                     <h1>Tajweed Ul Quran</h1>
                     <p>8 Years to NO age bar</p>
                     <Button name="Read More" to="/blog/tajweed"/>

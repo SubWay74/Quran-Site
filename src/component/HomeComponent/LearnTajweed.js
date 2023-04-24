@@ -80,7 +80,7 @@ const groupSession = [
         thirdDisc: "Weekends classes (70 mins)",
         fourthDisc: "fourth 00discrioption",
         link: "####",
-        charge: "Free"
+        charge: "12$"
     },
     {
         title: "Group 10 Students",

@@ -5,23 +5,43 @@ import 'react-phone-input-2/lib/style.css'
 
 export default function BookFreeTrailSec() {
         const [email, setEmail] = useState('');
-        const [value, setValue] = useState()
+        const [value, setValue] = useState("");
         const [select1, setSelect1] = useState('');
+        const [errorMsg, setErrorMsg] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission here
-        
-        if (!email === "" || !email.includes("@")) {
-            alert("Please enter a valid email address.");
-            return;
+        function validateEmail(email) {
+            const regex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+            return regex.test(email);
         }
 
-        if (select1 === "") {
-            alert("Please enter your name.");
-            return;
-        }
-    }
+        const handleSubmit = async (event) => {
+            event.preventDefault();
+            if (!email || !validateEmail(email)) {
+                setErrorMsg("Enter your Gmail!")
+            }else if (!select1) {
+                setErrorMsg("Choose your course!")
+            } else if (!value) {
+                setErrorMsg("Enter your phone!")
+            } else {
+                const token = localStorage.getItem("auth");
+                const response = await fetch('https://blue-cheerful-starfish.cyclic.app/form/booktrail/',{
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Token ${token}`
+                    },
+                    body: JSON.stringify({email: email, phone: value, type: select1}),
+                    });
+                if (response.status === 200) {
+                    const message = await response.json();
+                    console.log(message);
+                    window.location.href = '/';
+                } else {
+                    const message = await response.json();
+                    console.log(message);
+                }
+            }
+        };
 
     return (
         <>
@@ -35,29 +55,32 @@ export default function BookFreeTrailSec() {
                     <form onSubmit={handleSubmit} className="center">
                         <div>
                             <div className="input-container">
-                                <input required type="email" value={email} onChange={(e) => setEmail(prevValue => prevValue = e.target.value)} />
+                                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                                 <label className="transition">Email</label>
                             </div>
-                            <p className="error-msg"  id='first-name'>Please enter your username.</p>
                         </div>
                         <div>
                             <div className='center select-container'>
                                 <label className="transition">Select Course</label>
-                                <select value={select1} onChange={(e) => setSelect1(prevValue => prevValue = e.target.value)}>
+                                <select value={select1} onChange={(e) => setSelect1(e.target.value)}>
                                 <option value="">Courses</option>
-                                    <option value="option1">Tajweed Ul-Quran</option>
-                                    <option value="option2">Memorization Ul-Quran</option>
-                                    <option value="option3">Learn Urdu</option>
-                                    <option value="option4">Learn Arabic</option>
+                                    <option value="tajweed-ul-quran">Tajweed Ul-Quran</option>
+                                    <option value="memrization-ul-quran">Memorization Ul-Quran</option>
+                                    <option value="learn-urdu">Learn Urdu</option>
+                                    <option value="learn-arabic">Learn Arabic</option>
                                 </select>
                             </div>
-                            <p className="error-msg"  id='first-name'>Please enter your username.</p>
                         </div>
                         <PhoneInput
                             placeholder="Enter phone number"
                             value={value}
                             onChange={setValue}
                         />
+                        {errorMsg && 
+                            <div className="error-msg">
+                                <p>{errorMsg}</p>
+                            </div> }
+
                         <button className="btn center" type="submit">Submit</button>
                     </form>
                 </div>
