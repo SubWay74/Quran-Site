@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a58db973.css",
+    "main.js": "/static/js/main.68548c9d.js",
+    "static/media/footer-bg.webp": "/static/media/footer-bg.20be923754d571549a8e.webp",
+    "static/media/curriculum-bg.webp": "/static/media/curriculum-bg.6220690311c2d6b2df25.webp",
+    "static/media/aboutUs-bg.webp": "/static/media/aboutUs-bg.b663a7a465d687ceb37e.webp",
+    "static/media/landing-page.webp": "/static/media/landing-page.702ebcc9888f3a96842d.webp",
+    "static/media/bg-img-low-op.jpg": "/static/media/bg-img-low-op.4de9ccb5a2f9f1e3f619.jpg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/wave-main-bg.webp": "/static/media/wave-main-bg.ef03150935fc5193aa35.webp",
+    "index.html": "/index.html",
+    "main.a58db973.css.map": "/static/css/main.a58db973.css.map",
+    "main.68548c9d.js.map": "/static/js/main.68548c9d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a58db973.css",
+    "static/js/main.68548c9d.js"
+  ]
+}
